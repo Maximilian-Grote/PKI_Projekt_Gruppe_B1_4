@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezepte - Rezept-Empfehlungssystem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 Rezept-Empfehlungssystem</h1>
+            <a href="/" class="btn btn-secondary">← Zurück zur Zutatenwahl</a>
+        </header>
+
+        <main>
+            <!-- Info zu gewählten Zutaten -->
+            <section class="info-section">
+                <h2>Ergebnisse für:</h2>
+                <div id="selectedIngredientsInfo" class="tags-container"></div>
+            </section>
+
+            <!-- Rezepte-Gitter -->
+            <section class="recipes-section">
+                <div id="recipeGrid" class="recipe-grid">
+                    <p class="loading">Rezepte werden geladen...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal für Rezept-Details -->
+    <div id="detailsModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='recipes.js') }}"></script>
+</body>
+</html>

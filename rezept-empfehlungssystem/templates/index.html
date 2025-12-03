@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept-Empfehlungssystem - Zutatenwahl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 Rezept-Empfehlungssystem</h1>
+            <p>Wähle Zutaten aus und finde passende Rezepte</p>
+        </header>
+
+        <main>
+            <!-- Suchfeld -->
+            <section class="search-section">
+                <input 
+                    type="text" 
+                    id="ingredientSearch" 
+                    class="search-input" 
+                    placeholder="Zutat suchen (z.B. 'Chicken')"
+                    autocomplete="off"
+                >
+                <div id="searchSuggestions" class="search-suggestions"></div>
+            </section>
+
+            <!-- Gewählte Zutaten als Tags -->
+            <section class="selected-section">
+                <h2>Gewählte Zutaten:</h2>
+                <div id="selectedTags" class="tags-container"></div>
+            </section>
+
+            <!-- Zutatenkacheln -->
+            <section class="ingredients-section">
+                <h2>Alle Zutaten:</h2>
+                <div id="ingredientGrid" class="ingredient-grid">
+                    <p class="loading">Zutaten werden geladen...</p>
+                </div>
+            </section>
+
+            <!-- Such-Button -->
+            <section class="action-section">
+                <button id="searchBtn" class="btn btn-primary" disabled>
+                    Rezepte suchen (0 Zutaten)
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

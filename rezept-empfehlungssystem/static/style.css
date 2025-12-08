@@ -218,8 +218,19 @@ main {
    ============================================================ */
 
 .action-section {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* verschiebt den Button zurück, sodass er genau mittig sitzt */
+    z-index: 1000;
     text-align: center;
-    margin-top: 40px;
+}
+
+.action-section .btn {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .btn {

@@ -6,7 +6,7 @@ import os
 class Config:
     """Base-Konfiguration"""
     # Flask
-    DEBUG = False
+    DEBUG = True
     TESTING = False
     
     # TheMealDB API

@@ -60,6 +60,27 @@ class TheMealDBClient:
         except requests.RequestException as e:
             logger.error(f"Error searching recipes for {ingredient}: {e}")
             return []
+        
+    def search_recipes_by_ingredients(self, ingredients: List) -> List[Dict]:
+        """
+        Rezepte nach Zutaten suchen
+        
+        Args:
+            ingredients: Zutatenname (z.B. ["chicken","Basmati Rice", ...])
+            
+        Returns:
+            Liste mit Rezepten: [{"idMeal": "52806", "strMeal": "...", "strMealThumb": "..."}]
+        """
+        try:
+            response = self.session.get(f"{BASE_URL}/filter.php?i={ingredients.join(',')}")
+            response.raise_for_status()
+            data = response.json()
+            recipes = data.get("meals", [])
+            logger.info(f"Found {len(recipes)} recipes for ingredients: {ingredients}")
+            return recipes
+        except requests.RequestException as e:
+            logger.error(f"Error searching recipes for {ingredients}: {e}")
+            return []
 
     def get_recipe_details(self, meal_id: str) -> Optional[Dict]:
         """

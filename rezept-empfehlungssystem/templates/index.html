@@ -9,46 +9,72 @@
 <body>
     <div class="container">
         <header>
-            <h1>🍳 Rezept-Empfehlungssystem</h1>
+            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Rezept-Empfehlungssystem</a></h1>
             <p>Wähle Zutaten aus und finde passende Rezepte</p>
         </header>
 
         <main>
-            <!-- Suchfeld -->
-            <section class="search-section">
-                <input 
-                    type="text" 
-                    id="ingredientSearch" 
-                    class="search-input" 
-                    placeholder="Zutat suchen (z.B. 'Chicken')"
-                    autocomplete="off"
-                >
-                <div id="searchSuggestions" class="search-suggestions"></div>
-            </section>
+            <form action="{{ url_for('recipes_page') }}" method="get" class="ingredients-form" id="ingredientsForm">
+                <!-- Suchfeld mit Vorschlägen im gleichen Stil -->
+                <section class="search-section">
+                    <label for="ingredientSearch" class="visually-hidden">Zutat suchen</label>
+                    <input 
+                        type="search" 
+                        id="ingredientSearch" 
+                        class="search-input" 
+                        placeholder="Zutat suchen (z.B. 'Chicken')"
+                        autocomplete="off"
+                        aria-describedby="searchHint"
+                    >
+                    <div id="searchSuggestions" class="search-suggestions" aria-label="Suchvorschläge"></div>
+                </section>
 
-            <!-- Gewählte Zutaten als Tags -->
-            <section class="selected-section">
-                <h2>Gewählte Zutaten:</h2>
-                <div id="selectedTags" class="tags-container"></div>
-            </section>
+                <!-- Gewählte Zutaten als Tags -->
+                <section class="selected-section">
+                    <div class="selected-header">
+                        <h2>Gewählte Zutaten:</h2>
+                        <button type="button" class="btn-clear-all" id="clearAllBtn" aria-label="Alle Zutaten löschen" title="Alle Zutaten löschen">
+                            🗑️
+                        </button>
+                    </div>
+                    <div id="selectedTags" class="tags-container">
+                        <p class="empty-state">Noch keine Zutaten gewählt</p>
+                    </div>
+                </section>
 
-            <!-- Zutatenkacheln -->
-            <section class="ingredients-section">
-                <h2>Alle Zutaten:</h2>
-                <div id="ingredientGrid" class="ingredient-grid">
-                    <p class="loading">Zutaten werden geladen...</p>
-                </div>
-            </section>
+                <!-- Zutatenkacheln -->
+                <section class="ingredients-section">
+                    <h2>Alle Zutaten:</h2>
+                    <div class="ingredient-grid">
+                        {% for ingredient in ingredients %}
+                            {% set name = ingredient.strIngredient %}
+                            {% set image_url = ingredient.image_url %}
+                            <label class="ingredient-card">
+                                <input type="checkbox" name="ingredients" value="{{ name }}" aria-label="{{ name }}" {% if name in selected_ingredients %}checked{% endif %}>
+                                <div class="ingredient-visual">
+                                    <img src="{{ image_url }}" alt="{{ name }}" onerror="this.src='{{ url_for('static', filename='placeholder.svg') }}'">
+                                    <p class="ingredient-name">{{ name }}</p>
+                                </div>
+                            </label>
+                        {% endfor %}
+                    </div>
+                </section>
 
-            <!-- Such-Button -->
-            <section class="action-section">
-                <button id="searchBtn" class="btn btn-primary" disabled>
-                    Rezepte suchen (0 Zutaten)
-                </button>
-            </section>
+                <!-- Such-Button -->
+                <section class="action-section">
+                    <button type="submit" class="btn btn-primary" id="searchBtn" disabled>
+                        Rezepte suchen
+                    </button>
+                </section>
+            </form>
         </main>
     </div>
 
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script>
+        // Zutaten-Liste und vorgewählte Zutaten als globale Variablen für JS Zugriff
+        const ingredientNames = {{ ingredients | map(attribute='strIngredient') | list | tojson }};
+        const selectedIngredients = {{ selected_ingredients | tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='ingredients-search.js') }}"></script>
 </body>
 </html>

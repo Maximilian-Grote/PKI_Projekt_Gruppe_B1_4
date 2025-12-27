@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Platzhalterbild</title>
+  <desc id="desc">Einfache Platzhaltergrafik für fehlende Bilder</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e7ff" />
+      <stop offset="100%" stop-color="#c7d2fe" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#g)" rx="16" />
+  <g stroke="#4c51bf" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="42" y="58" width="116" height="84" rx="10" />
+    <path d="M74 118l20-24 18 20 16-18 18 22" />
+    <circle cx="86" cy="86" r="10" />
+  </g>
+</svg>

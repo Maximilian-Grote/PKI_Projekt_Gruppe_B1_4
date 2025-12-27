@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ recipe.strMeal }} - Rezeptdetails</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Rezept-Empfehlungssystem</a></h1>
+            <div class="header-buttons">
+                <a href="{{ url_for('index', ingredients=selected_ingredients) if selected_ingredients else url_for('index') }}" class="btn btn-secondary">Zur Zutatenauswahl</a>
+                <a href="{{ request.referrer or url_for('recipes_page') }}" class="btn btn-secondary">Zur Rezeptauswahl</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="recipe-details">
+                <h2 class="recipe-title">{{ recipe.strMeal }}</h2>
+                <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-detail-image" onerror="this.src='{{ url_for('static', filename='placeholder.svg') }}'">
+
+                <h3>Zutaten</h3>
+                <ul>
+                    {% for i in range(1, 21) %}
+                        {% set ingredient = recipe['strIngredient' + i|string] %}
+                        {% set measure = recipe['strMeasure' + i|string] %}
+                        {% if ingredient and ingredient.strip() %}
+                            <li>{{ ingredient }}{% if measure %} - {{ measure }}{% endif %}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+
+                <h3>Anleitung</h3>
+                <p>{{ recipe.strInstructions }}</p>
+
+                {% if recipe.strSource and recipe.strSource.strip() %}
+                    <p><a href="{{ recipe.strSource }}" target="_blank" rel="noreferrer">Quelle</a></p>
+                {% endif %}
+            </section>
+        </main>
+    </div>
+</body>
+</html>

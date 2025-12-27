@@ -9,34 +9,43 @@
 <body>
     <div class="container">
         <header>
-            <h1>🍳 Rezept-Empfehlungssystem</h1>
-            <a href="/" class="btn btn-secondary">← Zurück zur Zutatenwahl</a>
+            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Rezept-Empfehlungssystem</a></h1>
+            <a href="{{ url_for('index', ingredients=selected_ingredients) }}" class="btn btn-secondary">Zur Zutatenauswahl</a>
         </header>
 
         <main>
             <!-- Info zu gewählten Zutaten -->
             <section class="info-section">
                 <h2>Ergebnisse für:</h2>
-                <div id="selectedIngredientsInfo" class="tags-container"></div>
+                <div class="tags-container">
+                    {% for ingredient in selected_ingredients %}
+                        <span class="tag">{{ ingredient }}</span>
+                    {% endfor %}
+                </div>
             </section>
 
             <!-- Rezepte-Gitter -->
             <section class="recipes-section">
-                <div id="recipeGrid" class="recipe-grid">
-                    <p class="loading">Rezepte werden geladen...</p>
+                {% if error %}
+                    <p class="error">{{ error }}</p>
+                {% endif %}
+
+                <div class="recipe-grid">
+                    {% if recipes %}
+                        {% for recipe in recipes %}
+                            <a class="recipe-card" href="{{ url_for('recipe_detail_page', meal_id=recipe.idMeal, ingredients=selected_ingredients) }}">
+                                <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image" onerror="this.src='{{ url_for('static', filename='placeholder.svg') }}'">
+                                <div class="recipe-info">
+                                    <h3>{{ recipe.strMeal }}</h3>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    {% else %}
+                        <p class="empty-state">Keine Rezepte gefunden. Versuche andere Zutaten.</p>
+                    {% endif %}
                 </div>
             </section>
         </main>
     </div>
-
-    <!-- Modal für Rezept-Details -->
-    <div id="detailsModal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modalBody"></div>
-        </div>
-    </div>
-
-    <script src="{{ url_for('static', filename='recipes.js') }}"></script>
 </body>
 </html>

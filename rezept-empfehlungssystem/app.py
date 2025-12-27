@@ -1,11 +1,10 @@
 """
 Flask-Anwendung - Haupteinstiegspunkt
 """
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, abort
 from themealdb_client import TheMealDBClient
 import logging
 
-# Logging konfigurieren
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -27,62 +26,61 @@ def init_ingredients():
 @app.route("/")
 def index():
     """Startseite - Zutatenwahl"""
-    return render_template("index.html")
-
-
-@app.route("/api/ingredients")
-def get_ingredients():
-    """API: Alle verfügbaren Zutaten"""
-    return jsonify(ALL_INGREDIENTS)
-
-
-@app.route("/api/recipes")
-def get_recipes():
-    """
-    API: Rezepte für gewählte Zutaten suchen
-    Query-Parameter: ingredients (komma-separiert)
-    Beispiel: /api/recipes?ingredients=Chicken,Garlic
-    """
-    ingredients_param = request.args.get("ingredients", "").strip()
+    # Zutaten aus Query-Parametern auslesen (von Rezepte-Seite zurückgekommen)
+    selected_ingredients = request.args.getlist("ingredients")
     
-    if not ingredients_param:
-        return jsonify({"error": "No ingredients provided"}), 400
-    
-    # Zutaten splitten
-    ingredients = [i.strip() for i in ingredients_param.split(",")]
-    
-    # Rezepte für jede Zutat suchen
+    return render_template(
+        "index.html", 
+        ingredients=ALL_INGREDIENTS,
+        selected_ingredients=selected_ingredients
+    )
+
+
+def get_recipes_for_ingredients(ingredients: list) -> list:
+    """Suche Rezepte für mehrere Zutaten (Duplikate entfernen)"""
     all_recipes = {}
     for ingredient in ingredients:
-        if ingredient:
-            recipes = client.search_recipes_by_ingredient(ingredient)
-            for recipe in recipes:
-                meal_id = recipe.get("idMeal")
-                if meal_id not in all_recipes:
-                    all_recipes[meal_id] = recipe
-    
-    # In Liste konvertieren und sortieren
-    recipes_list = list(all_recipes.values())
-    logger.info(f"Found {len(recipes_list)} recipes for ingredients: {ingredients}")
-    
-    return jsonify(recipes_list)
-
-
-@app.route("/api/recipe/<meal_id>")
-def get_recipe_details(meal_id):
-    """API: Details eines Rezepts"""
-    recipe = client.get_recipe_details(meal_id)
-    
-    if not recipe:
-        return jsonify({"error": f"Recipe with ID {meal_id} not found"}), 404
-    
-    return jsonify(recipe)
+        recipes = client.search_recipes_by_ingredient(ingredient)
+        for recipe in recipes:
+            meal_id = recipe.get("idMeal")
+            if meal_id not in all_recipes:
+                all_recipes[meal_id] = recipe
+    return list(all_recipes.values())
 
 
 @app.route("/recipes")
 def recipes_page():
-    """Rezepte-Ergebnisseite"""
-    return render_template("recipes.html")
+    selected_ingredients = request.args.getlist("ingredients")
+
+    if not selected_ingredients:
+        return render_template(
+            "recipes.html",
+            recipes=[],
+            selected_ingredients=[],
+            error="Bitte wähle mindestens eine Zutat aus.",
+        )
+
+    recipes_list = get_recipes_for_ingredients(selected_ingredients)
+    logger.info(
+        f"Found {len(recipes_list)} recipes for ingredients: {selected_ingredients}"
+    )
+
+    return render_template(
+        "recipes.html",
+        recipes=recipes_list,
+        selected_ingredients=selected_ingredients,
+        error=None,
+    )
+
+
+@app.route("/recipe/<meal_id>")
+def recipe_detail_page(meal_id):
+    recipe = client.get_recipe_details(meal_id)
+    if not recipe:
+        abort(404)
+
+    selected_ingredients = request.args.getlist("ingredients")
+    return render_template("recipe_detail.html", recipe=recipe, selected_ingredients=selected_ingredients)
 
 
 if __name__ == "__main__":

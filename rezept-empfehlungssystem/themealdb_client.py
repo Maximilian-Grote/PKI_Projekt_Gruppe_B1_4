@@ -19,13 +19,7 @@ class TheMealDBClient:
         self._ingredients_cache = None
 
     def get_all_ingredients(self) -> List[Dict]:
-        """
-        Alle verfügbaren Zutaten laden
-        Cached nach erstem Aufruf
-        
-        Returns:
-            Liste mit Zutaten: [{"idIngredient": "1", "strIngredient": "Chicken", ...}]
-        """
+        """Alle verfügbaren Zutaten laden, angereichert mit Bild-URLs"""
         if self._ingredients_cache:
             return self._ingredients_cache
 
@@ -33,12 +27,23 @@ class TheMealDBClient:
             response = self.session.get(f"{BASE_URL}/list.php?i=list")
             response.raise_for_status()
             data = response.json()
-            self._ingredients_cache = data.get("meals", [])
+            ingredients = data.get("meals", [])
+
+            for item in ingredients:
+                name = item.get("strIngredient", "")
+                item["image_url"] = self.get_ingredient_image_url(name)
+
+            self._ingredients_cache = ingredients
             logger.info(f"Loaded {len(self._ingredients_cache)} ingredients from TheMealDB")
             return self._ingredients_cache
         except requests.RequestException as e:
             logger.error(f"Error loading ingredients: {e}")
             return []
+
+    def get_ingredient_image_url(self, ingredient_name: str) -> str:
+        """Bild-URL für eine Zutat"""
+        safe_name = (ingredient_name or "").strip()
+        return f"https://www.themealdb.com/images/ingredients/{safe_name}.png"
 
     def search_recipes_by_ingredient(self, ingredient: str) -> List[Dict]:
         """
@@ -83,14 +88,3 @@ class TheMealDBClient:
             logger.error(f"Error loading recipe details for {meal_id}: {e}")
             return None
 
-    def get_ingredient_image_url(self, ingredient_name: str) -> str:
-        """
-        Bild-URL für eine Zutat
-        
-        Args:
-            ingredient_name: Name der Zutat
-            
-        Returns:
-            URL zum Zutatenbild
-        """
-        return f"https://www.themealdb.com/images/ingredients/{ingredient_name}.png"

@@ -59,7 +59,7 @@ class TheMealDBClient:
             response = self.session.get(f"{BASE_URL}/filter.php?i={ingredient}")
             response.raise_for_status()
             data = response.json()
-            recipes = data.get("meals", [])
+            recipes = data.get("meals", []) or [] #fängt None ab
             logger.info(f"Found {len(recipes)} recipes for ingredient: {ingredient}")
             return recipes
         except requests.RequestException as e:

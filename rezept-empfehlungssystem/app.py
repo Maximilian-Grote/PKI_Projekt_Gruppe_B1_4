@@ -1,9 +1,11 @@
 """
 Flask-Anwendung - Haupteinstiegspunkt
 """
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, jsonify
 from themealdb_client import TheMealDBClient
 import logging
+import difflib
+import unicodedata
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -13,6 +15,27 @@ client = TheMealDBClient()
 
 # Globale Zutaten (beim Start laden)
 ALL_INGREDIENTS = []
+
+
+def _normalize(text: str) -> str:
+    """Kleinbuchstaben + Akzente entfernen."""
+    text = (text or "").strip().lower()
+    return "".join(
+        ch for ch in unicodedata.normalize("NFD", text) if unicodedata.category(ch) != "Mn"
+    )
+
+
+def score_ingredient(query: str, candidate: str) -> float:
+    """Fuzzy-Score zwischen 0 und 1 mit Bonus für Präfix/Substring."""
+    q = _normalize(query)
+    c = _normalize(candidate)
+    if not q or not c:
+        return 0.0
+
+    base = difflib.SequenceMatcher(None, q, c).ratio()
+    bonus = 0.1 if c.startswith(q) else (0.05 if q in c else 0.0)
+    score = max(0.0, min(1.0, base + bonus))
+    return score
 
 
 @app.before_request
@@ -34,6 +57,33 @@ def index():
         ingredients=ALL_INGREDIENTS,
         selected_ingredients=selected_ingredients
     )
+
+
+@app.route("/ingredient_suggestions")
+def ingredient_suggestions():
+    """JSON-Vorschläge für Zutaten (fuzzy, absteigend nach Score)."""
+    query = request.args.get("q", "").strip()
+    if not query:
+        return jsonify([])
+
+    scored = []
+    for item in ALL_INGREDIENTS:
+        name = item.get("strIngredient", "")
+        score = score_ingredient(query, name)
+        if score > 0.2:
+            scored.append(
+                {
+                    "name": name,
+                    "image_url": item.get("image_url"),
+                    "score": score,
+                }
+            )
+
+    top = sorted(scored, key=lambda x: x["score"], reverse=True)[:8]
+    for entry in top:
+        entry.pop("score", None)
+
+    return jsonify(top)
 
 
 def get_recipes_for_ingredients(ingredients: list) -> list:

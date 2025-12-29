@@ -1,9 +1,11 @@
 """
 Flask-Anwendung - Haupteinstiegspunkt
 """
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, jsonify
 from themealdb_client import TheMealDBClient
 import logging
+import difflib
+import unicodedata
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -13,6 +15,27 @@ client = TheMealDBClient()
 
 # Globale Zutaten (beim Start laden)
 ALL_INGREDIENTS = []
+
+
+def _normalize(text: str) -> str:
+    """Kleinbuchstaben + Akzente entfernen."""
+    text = (text or "").strip().lower()
+    return "".join(
+        ch for ch in unicodedata.normalize("NFD", text) if unicodedata.category(ch) != "Mn"
+    )
+
+
+def score_ingredient(query: str, candidate: str) -> float:
+    """Fuzzy-Score zwischen 0 und 1 mit Bonus für Präfix/Substring."""
+    q = _normalize(query)
+    c = _normalize(candidate)
+    if not q or not c:
+        return 0.0
+
+    base = difflib.SequenceMatcher(None, q, c).ratio()
+    bonus = 0.1 if c.startswith(q) else (0.05 if q in c else 0.0)
+    score = max(0.0, min(1.0, base + bonus))
+    return score
 
 
 @app.before_request
@@ -36,16 +59,60 @@ def index():
     )
 
 
+@app.route("/ingredient_suggestions")
+def ingredient_suggestions():
+    """JSON-Vorschläge für Zutaten (fuzzy, absteigend nach Score)."""
+    query = request.args.get("q", "").strip()
+    if not query:
+        return jsonify([])
+
+    scored = []
+    for item in ALL_INGREDIENTS:
+        name = item.get("strIngredient", "")
+        score = score_ingredient(query, name)
+        if score > 0.2:
+            scored.append(
+                {
+                    "name": name,
+                    "image_url": item.get("image_url"),
+                    "score": score,
+                }
+            )
+
+    top = sorted(scored, key=lambda x: x["score"], reverse=True)[:8]
+    for entry in top:
+        entry.pop("score", None)
+
+    return jsonify(top)
+
+
 def get_recipes_for_ingredients(ingredients: list) -> list:
-    """Suche Rezepte für mehrere Zutaten (Duplikate entfernen)"""
-    all_recipes = {}
+    """Suche Rezepte, die alle angegebenen Zutaten enthalten (Schnittmenge)."""
+    if not ingredients:
+        return []
+
+    recipes_by_id = {}
+    intersect_ids = None  # Wird mit der Schnittmenge der Meal-IDs gefüllt
+
     for ingredient in ingredients:
-        recipes = client.search_recipes_by_ingredient(ingredient)
+        recipes = client.search_recipes_by_ingredient(ingredient) or []
+        current_ids = set()
+
         for recipe in recipes:
             meal_id = recipe.get("idMeal")
-            if meal_id not in all_recipes:
-                all_recipes[meal_id] = recipe
-    return list(all_recipes.values())
+            if meal_id:
+                current_ids.add(meal_id)
+                recipes_by_id.setdefault(meal_id, recipe)
+
+        if intersect_ids is None:
+            intersect_ids = current_ids
+        else:
+            intersect_ids &= current_ids
+
+        if not intersect_ids:
+            break
+
+    return [recipes_by_id[mid] for mid in intersect_ids] if intersect_ids else []
 
 
 @app.route("/recipes")

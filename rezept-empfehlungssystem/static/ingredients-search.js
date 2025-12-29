@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const checkboxByName = new Map();
     checkboxes.forEach(cb => checkboxByName.set(cb.value.toLowerCase(), cb));
 
+    let suggestionAborter = null;
+
     function renderSelection() {
         const selected = checkboxes.filter(cb => cb.checked).map(cb => cb.value);
 
@@ -56,27 +58,40 @@ document.addEventListener('DOMContentLoaded', function () {
         suggestions.style.display = 'none';
     }
 
-    function renderSuggestions(query) {
-        const q = query.trim().toLowerCase();
+    async function renderSuggestions(query) {
+        const q = query.trim();
         if (!q) {
             clearSuggestions();
             return;
         }
 
-        const matches = ingredientNames
-            .filter(name => name.toLowerCase().includes(q))
-            .slice(0, 8);
+        if (suggestionAborter) {
+            suggestionAborter.abort();
+        }
+        suggestionAborter = new AbortController();
 
-        if (matches.length === 0) {
+        let matches = [];
+        try {
+            const res = await fetch('/ingredient_suggestions?q=' + encodeURIComponent(q), {
+                signal: suggestionAborter.signal
+            });
+            if (res.ok) {
+                matches = await res.json();
+            }
+        } catch (err) {
+            if (err.name === 'AbortError') return;
+        }
+
+        if (!matches || matches.length === 0) {
             suggestions.innerHTML = '<div class="suggestion-item no-matches">Keine Treffer</div>';
             suggestions.style.display = 'block';
             return;
         }
 
         suggestions.innerHTML = matches
-            .map(name => {
-                const ingredient = ingredientNames.find(i => i.strIngredient === name);
-                const imageUrl = ingredient?.image_url || 'https://www.themealdb.com/images/ingredients/' + name + '.png';
+            .map(item => {
+                const name = item.name;
+                const imageUrl = item.image_url || 'https://www.themealdb.com/images/ingredients/' + name + '.png';
                 return '<div class="suggestion-item" data-name="' + name + '">' +
                     '<img src="' + imageUrl + '" alt="' + name + '" class="suggestion-image" onerror="this.src=' + "'" + "{{ url_for('static', filename='placeholder.svg') }}" + "'" + '">' +
                     '<span>' + name + '</span>' +

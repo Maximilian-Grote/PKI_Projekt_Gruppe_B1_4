@@ -37,15 +37,32 @@ def index():
 
 
 def get_recipes_for_ingredients(ingredients: list) -> list:
-    """Suche Rezepte für mehrere Zutaten (Duplikate entfernen)"""
-    all_recipes = {}
+    """Suche Rezepte, die alle angegebenen Zutaten enthalten (Schnittmenge)."""
+    if not ingredients:
+        return []
+
+    recipes_by_id = {}
+    intersect_ids = None  # Wird mit der Schnittmenge der Meal-IDs gefüllt
+
     for ingredient in ingredients:
-        recipes = client.search_recipes_by_ingredient(ingredient)
+        recipes = client.search_recipes_by_ingredient(ingredient) or []
+        current_ids = set()
+
         for recipe in recipes:
             meal_id = recipe.get("idMeal")
-            if meal_id not in all_recipes:
-                all_recipes[meal_id] = recipe
-    return list(all_recipes.values())
+            if meal_id:
+                current_ids.add(meal_id)
+                recipes_by_id.setdefault(meal_id, recipe)
+
+        if intersect_ids is None:
+            intersect_ids = current_ids
+        else:
+            intersect_ids &= current_ids
+
+        if not intersect_ids:
+            break
+
+    return [recipes_by_id[mid] for mid in intersect_ids] if intersect_ids else []
 
 
 @app.route("/recipes")

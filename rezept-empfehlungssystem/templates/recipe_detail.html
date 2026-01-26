@@ -39,6 +39,23 @@
                     <p><a href="{{ recipe.strSource }}" target="_blank" rel="noreferrer">Quelle</a></p>
                 {% endif %}
             </section>
+
+            {% if recommended_recipes %}
+            <section class="recipes-section">
+                <h2>Ähnliche Rezepte</h2>
+                <p class="hint">Basierend auf ähnlichen Zutaten</p>
+                <div class="recipe-grid">
+                    {% for rec in recommended_recipes %}
+                        <a class="recipe-card" href="{{ url_for('recipe_detail_page', meal_id=rec.idMeal, ingredients=selected_ingredients) }}">
+                            <img src="{{ rec.strMealThumb }}" alt="{{ rec.strMeal }}" class="recipe-image" onerror="this.src='{{ url_for('static', filename='placeholder.svg') }}'">
+                            <div class="recipe-info">
+                                <h3>{{ rec.strMeal }}</h3>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
         </main>
     </div>
 </body>

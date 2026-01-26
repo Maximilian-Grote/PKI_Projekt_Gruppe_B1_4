@@ -17,6 +17,7 @@ class TheMealDBClient:
     def __init__(self):
         self.session = requests.Session()
         self._ingredients_cache = None
+        self._recipe_details_cache = {}
 
     def get_all_ingredients(self) -> List[Dict]:
         """Alle verfügbaren Zutaten laden, angereichert mit Bild-URLs"""
@@ -76,12 +77,16 @@ class TheMealDBClient:
         Returns:
             Rezept-Details oder None bei Fehler
         """
+        if meal_id in self._recipe_details_cache:
+            return self._recipe_details_cache.get(meal_id)
+
         try:
             response = self.session.get(f"{BASE_URL}/lookup.php?i={meal_id}")
             response.raise_for_status()
             data = response.json()
             meals = data.get("meals", [])
             if meals:
+                self._recipe_details_cache[meal_id] = meals[0]
                 return meals[0]
             return None
         except requests.RequestException as e:

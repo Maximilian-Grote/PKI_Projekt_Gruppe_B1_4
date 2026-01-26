@@ -6,6 +6,8 @@ from themealdb_client import TheMealDBClient
 import logging
 import difflib
 import unicodedata
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -36,6 +38,67 @@ def score_ingredient(query: str, candidate: str) -> float:
     bonus = 0.1 if c.startswith(q) else (0.05 if q in c else 0.0)
     score = max(0.0, min(1.0, base + bonus))
     return score
+
+
+def _ingredient_text(recipe_detail: dict) -> str:
+    """Extrahiert Zutaten + Mengen als Textrepräsentation für TF-IDF."""
+    parts = []
+    for i in range(1, 21):
+        ingredient = recipe_detail.get(f"strIngredient{i}")
+        measure = recipe_detail.get(f"strMeasure{i}")
+        if ingredient and ingredient.strip():
+            token = ingredient.strip()
+            if measure and measure.strip():
+                token = f"{token} {measure.strip()}"
+            parts.append(token)
+
+    instructions = recipe_detail.get("strInstructions", "") or ""
+    return " ".join(parts + [instructions])
+
+
+def recommend_similar_recipes(target_detail: dict, candidate_recipes: list, top_n: int = 4) -> list:
+    """Berechnet ähnliche Rezepte zur Detailansicht per TF-IDF."""
+    if not target_detail or not candidate_recipes:
+        return []
+
+    target_id = target_detail.get("idMeal")
+    enriched = []
+
+    target_text = _ingredient_text(target_detail)
+    if target_text.strip():
+        enriched.append({"recipe": target_detail, "text": target_text})
+
+    for recipe in candidate_recipes:
+        meal_id = recipe.get("idMeal")
+        if not meal_id or meal_id == target_id:
+            continue
+
+        details = client.get_recipe_details(meal_id)
+        if not details:
+            continue
+
+        text_repr = _ingredient_text(details)
+        if not text_repr.strip():
+            continue
+
+        enriched.append({"recipe": recipe, "text": text_repr})
+
+    if len(enriched) < 2:
+        return []
+
+    vectorizer = TfidfVectorizer(stop_words="english", ngram_range=(1, 2))
+    matrix = vectorizer.fit_transform(entry["text"] for entry in enriched)
+    similarity = cosine_similarity(matrix)
+
+    anchor_index = 0  # erstes Element ist das aktuelle Rezept
+    scored = []
+    for idx, score in enumerate(similarity[anchor_index]):
+        if idx == anchor_index:
+            continue
+        scored.append((idx, float(score)))
+
+    scored.sort(key=lambda item: item[1], reverse=True)
+    return [enriched[idx]["recipe"] for idx, _ in scored[:top_n]]
 
 
 @app.before_request
@@ -147,7 +210,26 @@ def recipe_detail_page(meal_id):
         abort(404)
 
     selected_ingredients = request.args.getlist("ingredients")
-    return render_template("recipe_detail.html", recipe=recipe, selected_ingredients=selected_ingredients)
+    ingredient_basis = selected_ingredients
+    if not ingredient_basis:
+        derived = [recipe.get(f"strIngredient{i}") for i in range(1, 21)]
+        ingredient_basis = [ing for ing in derived if ing and ing.strip()]
+        ingredient_basis = ingredient_basis[:3]  # begrenze auf erste Zutaten für Suche
+
+    candidates = []
+    if ingredient_basis:
+        candidates = get_recipes_for_ingredients(ingredient_basis) or []
+        if not candidates and ingredient_basis:
+            candidates = client.search_recipes_by_ingredient(ingredient_basis[0]) or []
+
+    recommended = recommend_similar_recipes(recipe, candidates)
+
+    return render_template(
+        "recipe_detail.html",
+        recipe=recipe,
+        selected_ingredients=selected_ingredients,
+        recommended_recipes=recommended,
+    )
 
 
 if __name__ == "__main__":

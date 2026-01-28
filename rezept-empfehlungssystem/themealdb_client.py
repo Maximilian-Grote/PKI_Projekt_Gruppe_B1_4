@@ -32,7 +32,7 @@ class TheMealDBClient:
 
             for item in ingredients:
                 name = item.get("strIngredient", "")
-                item["image_url"] = self.get_ingredient_image_url(name)
+                item["image_url"] = item.get("strThumb", "")
 
             self._ingredients_cache = ingredients
             logger.info(f"Loaded {len(self._ingredients_cache)} ingredients from TheMealDB")

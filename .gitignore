@@ -3,7 +3,7 @@ rezept-empfehlungssystem/tests
 .vscode
 __pycache__/
 .ipynb_checkpoints/
-tests/*
+tests
 rezept-empfehlungssystem/__pycache__/*
 .venvRezept
 .github

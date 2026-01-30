@@ -4,3 +4,4 @@ rezept-empfehlungssystem/pop_demo.py
 *.vscode/launch.json
 __pycache__/
 .ipynb_checkpoints/
+tests/*

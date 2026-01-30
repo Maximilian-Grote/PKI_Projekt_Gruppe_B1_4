@@ -24,22 +24,27 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 
 ### 1. Installation
 
-Um die benötigten Pakete in einer virtuellen Umgebung zu installieren, führe die folgenden Schritte aus:
+Um eine alte virtuelle Umgebung zu löschen, führe die folgenden Schritte aus:
 
-1. Erstelle eine virtuelle Umgebung:
+Deaktiviere die virtuelle Umgebung, falls sie aktiv ist:
    ```bash
-   python -m venv venv
+   deactivate
    ```
-2. Aktiviere die virtuelle Umgebung:
-   - Für Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - Für macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-3. Installiere die Abhängigkeiten:
+Lösche des alten Ordner der virtuellen Umgebung .venv:
+   ```bash
+   rm -rf .venv
+   ```
+Um die benötigten Pakete in einer virtuellen Umgebung zu installieren, führe die folgenden Schritte aus:
+   
+Erstelle eine neue virtuelle Umgebung manche Bibliotheken funktionieren nur mit Python 3.9.x :
+   ```bash
+   python3.9 -m venv .venvRezept
+   ```
+venv Umgebung activieren:
+   ```bash
+   source .venvRezept/Scripts/activate
+   ```
+Packages neu installieren:
    ```bash
    pip install -r requirements.txt
    ```
@@ -47,6 +52,7 @@ Um die benötigten Pakete in einer virtuellen Umgebung zu installieren, führe d
 ### 2. Starten
 
 ```bash
+cd rezept-empfehlungssystem
 python app.py
 ```
 
@@ -108,41 +114,3 @@ rezept-empfehlungssystem/
    - Rezept-Karten mit Bildern rendern
    - Klick auf Rezept → Modal mit Details
    - Modal zeigt: Bild, Zutaten, Anleitungstext
-
-## Entwickler-Hinweise
-
-- **Einfach halten**: Kein NLP/KI in dieser Phase—exaktes Matching reicht
-- **Caching**: TheMealDB-Antworten werden gecacht, um Rate-Limits zu vermeiden
-- **Fehlerbehandlung**: Fehlerhafte Zutatenbilder zeigen Placeholder
-- **Responsive Design**: Mobile & Desktop-kompatibel
-
-## Nächste Schritte (Zukunft)
-
-- [ ] NLP-Zutatenerkennung (spaCy/NLTK)
-- [ ] Flexible Suche (1-2 fehlende Zutaten)
-- [ ] Kategorien/Küchen-Filter
-- [ ] Lokalisierung (Deutsch/Englisch)
-- [ ] Content-based Empfehlungen (Scikit-learn)
-- [ ] Maßeinheiten-Konvertierung
-
-## Alte virtuelle Umgebung löschen
-
-Um eine alte virtuelle Umgebung zu löschen, führe die folgenden Schritte aus:
-
-1. Deaktiviere die virtuelle Umgebung, falls sie aktiv ist:
-   ```bash
-   deactivate
-   ```
-2. Lösche den Ordner der virtuellen Umgebung:
-   ```bash
-   rm -rf venv
-   ```
-   (Für Windows:
-   ```bash
-   rmdir /s /q venv
-   ```
-   )
-3. Erstelle eine neue virtuelle Umgebung:
-   ```bash
-   python -m venv venv
-   ```

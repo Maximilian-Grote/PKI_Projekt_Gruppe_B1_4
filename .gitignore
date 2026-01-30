@@ -5,3 +5,4 @@ rezept-empfehlungssystem/pop_demo.py
 __pycache__/
 .ipynb_checkpoints/
 tests/*
+rezept-empfehlungssystem/__pycache__/*

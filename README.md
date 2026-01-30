@@ -23,12 +23,29 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 ## Setup
 
 ### 1. Installation
-```bash
-cd rezept-empfehlungssystem
-pip install -r requirements.txt
-```
+
+Um die benötigten Pakete in einer virtuellen Umgebung zu installieren, führe die folgenden Schritte aus:
+
+1. Erstelle eine virtuelle Umgebung:
+   ```bash
+   python -m venv venv
+   ```
+2. Aktiviere die virtuelle Umgebung:
+   - Für Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - Für macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+3. Installiere die Abhängigkeiten:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### 2. Starten
+
 ```bash
 python app.py
 ```
@@ -107,3 +124,25 @@ rezept-empfehlungssystem/
 - [ ] Lokalisierung (Deutsch/Englisch)
 - [ ] Content-based Empfehlungen (Scikit-learn)
 - [ ] Maßeinheiten-Konvertierung
+
+## Alte virtuelle Umgebung löschen
+
+Um eine alte virtuelle Umgebung zu löschen, führe die folgenden Schritte aus:
+
+1. Deaktiviere die virtuelle Umgebung, falls sie aktiv ist:
+   ```bash
+   deactivate
+   ```
+2. Lösche den Ordner der virtuellen Umgebung:
+   ```bash
+   rm -rf venv
+   ```
+   (Für Windows:
+   ```bash
+   rmdir /s /q venv
+   ```
+   )
+3. Erstelle eine neue virtuelle Umgebung:
+   ```bash
+   python -m venv venv
+   ```

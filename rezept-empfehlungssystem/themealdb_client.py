@@ -68,29 +68,43 @@ class TheMealDBClient:
 
     def search_recipes_by_ingredient(self, ingredient: str) -> List[Dict]:
         """
-        Rezepte nach Zutat suchen
+        Rezepte nach Zutat suchen.
+        
+        Nutzt den Similarity-Cache, um ähnliche Zutaten zu finden und
+        sucht nach Rezepten für diese Zutaten.
         
         Args:
-            ingredient: Zutatenname (z.B. "Chicken")
+            ingredient: Zutatname (z.B. "Chicken")
             
         Returns:
             Liste mit Rezepten: [{"idMeal": "52806", "strMeal": "...", "strMealThumb": "..."}]
         """
         try:
             recipes = []
-            logger.info(f"1. Search input ingrident: {ingredient}")
-            similar_ingredients = self._similarity_cache.get(ingredient, []) if self._similarity_cache else [ingredient]
-            logger.info(f"2.Liste der ingredients: {similar_ingredients}")
-            for ing,score in similar_ingredients:
-                logger.info(f"Searching recipes for ingredient: {ing}")
+            
+            # Ähnliche Zutaten aus Cache abrufen (Fallback auf ursprüngliche Zutat)
+            similar_ingredients = (
+                self._similarity_cache.get(ingredient, [])
+                if self._similarity_cache
+                else [ingredient]
+            )
+            
+            # Für jede ähnliche Zutat Rezepte abrufen
+            for ing, score in similar_ingredients:
                 response = self.session.get(f"{BASE_URL}/filter.php?i={ing}")
                 response.raise_for_status()
                 data = response.json()
-                recipes.extend(data.get("meals", []) or []) #fängt None ab
-                logger.info(f"Found {len(recipes)} recipes for ingredient: {ing}")
+                
+                # None-Werte abfangen und zur Rezept-Liste hinzufügen
+                recipes.extend(data.get("meals", []) or [])
+                logger.info(
+                    f" -- Found {len(recipes)} {ingredient}-recipes for ingredient '{ing}' (similarity: {score})"
+                )
+            
             return recipes
+            
         except requests.RequestException as e:
-            logger.error(f"Error searching recipes for {ingredient}: {e}")
+            logger.error(f"Error searching recipes for '{ingredient}': {e}")
             return []
 
     def get_recipe_details(self, meal_id: str) -> Optional[Dict]:

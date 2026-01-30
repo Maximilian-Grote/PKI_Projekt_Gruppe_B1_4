@@ -17,6 +17,7 @@ client = TheMealDBClient()
 
 # Globale Zutaten (beim Start laden)
 ALL_INGREDIENTS = []
+ALL_SIMILAR_INGREDIENTS = {}
 
 
 def _normalize(text: str) -> str:
@@ -105,8 +106,11 @@ def recommend_similar_recipes(target_detail: dict, candidate_recipes: list, top_
 def init_ingredients():
     """Zutaten beim ersten Request laden"""
     global ALL_INGREDIENTS
+    global ALL_SIMILAR_INGREDIENTS
     if not ALL_INGREDIENTS:
         ALL_INGREDIENTS = client.get_all_ingredients()
+    if not ALL_SIMILAR_INGREDIENTS:
+        ALL_SIMILAR_INGREDIENTS = client.load_similarity_cache()
 
 
 @app.route("/")
@@ -133,7 +137,7 @@ def ingredient_suggestions():
     for item in ALL_INGREDIENTS:
         name = item.get("strIngredient", "")
         score = score_ingredient(query, name)
-        if score > 0.2:
+        if score > 0.5:
             scored.append(
                 {
                     "name": name,
@@ -149,10 +153,36 @@ def ingredient_suggestions():
     return jsonify(top)
 
 
+def _deduplicate_similar_ingredients(ingredients: list) -> list:
+    """
+    Entfernt ähnliche/doppelte Zutaten aus der Liste basierend auf ALL_SIMILAR_INGREDIENTS.
+    Falls Zutat A und B ähnlich sind (in ALL_SIMILAR_INGREDIENTS vorhanden),
+    wird eine davon entfernt.
+    """
+    if not ingredients or not ALL_SIMILAR_INGREDIENTS:
+        return ingredients
+
+    deduplicated = ingredients.copy()
+    to_remove = set()
+
+    for ingredient in deduplicated:
+        if ingredient in ALL_SIMILAR_INGREDIENTS:
+            similar_list = ALL_SIMILAR_INGREDIENTS.get(ingredient, [])
+            for similar_entry in similar_list:
+                similar_ingredient = similar_entry[0] if isinstance(similar_entry, (list, tuple)) else similar_entry
+                if similar_ingredient in deduplicated and similar_ingredient != ingredient:
+                    to_remove.add(similar_ingredient)
+
+    return [ing for ing in deduplicated if ing not in to_remove]
+
+
 def get_recipes_for_ingredients(ingredients: list) -> list:
     """Suche Rezepte, die alle angegebenen Zutaten enthalten (Schnittmenge)."""
     if not ingredients:
         return []
+
+    # Ähnliche Zutaten deduplizieren da sie sonst doppelt in die Suche eingehen und nicht beides in einem Rezept vorkommen kann
+    ingredients = _deduplicate_similar_ingredients(ingredients)
 
     recipes_by_id = {}
     intersect_ids = None  # Wird mit der Schnittmenge der Meal-IDs gefüllt

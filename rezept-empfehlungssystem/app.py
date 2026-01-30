@@ -156,8 +156,7 @@ def ingredient_suggestions():
 def _deduplicate_similar_ingredients(ingredients: list) -> list:
     """
     Entfernt ähnliche/doppelte Zutaten aus der Liste basierend auf ALL_SIMILAR_INGREDIENTS.
-    Falls Zutat A und B ähnlich sind (in ALL_SIMILAR_INGREDIENTS vorhanden),
-    wird eine davon entfernt.
+    Die Hauptzutat (erste in der Gruppe) bleibt, ähnliche werden entfernt.
     """
     if not ingredients or not ALL_SIMILAR_INGREDIENTS:
         return ingredients
@@ -165,14 +164,18 @@ def _deduplicate_similar_ingredients(ingredients: list) -> list:
     deduplicated = ingredients.copy()
     to_remove = set()
 
-    for ingredient in deduplicated:
+    for ingredient in ingredients:
+        if ingredient in to_remove:
+            continue
+            
         if ingredient in ALL_SIMILAR_INGREDIENTS:
             similar_list = ALL_SIMILAR_INGREDIENTS.get(ingredient, [])
             for similar_entry in similar_list:
                 similar_ingredient = similar_entry[0] if isinstance(similar_entry, (list, tuple)) else similar_entry
                 if similar_ingredient in deduplicated and similar_ingredient != ingredient:
                     to_remove.add(similar_ingredient)
-
+    
+    logger.debug(f"Removed similar ingredients: {to_remove}, from input: {ingredients}")
     return [ing for ing in deduplicated if ing not in to_remove]
 
 

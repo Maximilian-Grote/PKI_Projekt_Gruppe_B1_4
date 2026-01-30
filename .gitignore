@@ -1,4 +1,6 @@
 
 rezept-empfehlungssystem/pop_demo.py
-rezept-empfehlungssystem/__pycache__/themealdb_client.cpython-39.pyc
-.vscode/launch.json
+*.pyc
+*.vscode/launch.json
+__pycache__/
+.ipynb_checkpoints/

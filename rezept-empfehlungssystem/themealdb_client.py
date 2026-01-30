@@ -2,13 +2,17 @@
 TheMealDB API Client - Wrapper für API-Aufrufe
 Dokumentation: https://www.themealdb.com/api.php
 """
-import requests
-from typing import Dict, List, Optional
+import json
 import logging
+from pathlib import Path
+from typing import Dict, List, Optional
+
+import requests
 
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.themealdb.com/api/json/v1/1"
+SIMILARITY_CACHE_PATH = "ingredient_similarity_cache_30-01-2026-15-48_max.json"
 
 
 class TheMealDBClient:
@@ -18,6 +22,22 @@ class TheMealDBClient:
         self.session = requests.Session()
         self._ingredients_cache = None
         self._recipe_details_cache = {}
+        self._similarity_cache = None
+
+    def load_similarity_cache(self) -> Dict:
+        """Lädt die global definierte JSON-Datei und gibt ein Dict zurück."""
+        if self._similarity_cache is not None:
+            return self._similarity_cache
+
+        try:
+            file_path = Path(__file__).resolve().parent / SIMILARITY_CACHE_PATH
+            with file_path.open("r", encoding="utf-8") as file:
+                self._similarity_cache = json.load(file)
+            logger.info("Loaded similarity cache from %s", file_path)
+            return self._similarity_cache
+        except (OSError, json.JSONDecodeError) as exc:
+            logger.error("Error loading similarity cache: %s", exc)
+            return {}
 
     def get_all_ingredients(self) -> List[Dict]:
         """Alle verfügbaren Zutaten laden, angereichert mit Bild-URLs"""
@@ -57,11 +77,17 @@ class TheMealDBClient:
             Liste mit Rezepten: [{"idMeal": "52806", "strMeal": "...", "strMealThumb": "..."}]
         """
         try:
-            response = self.session.get(f"{BASE_URL}/filter.php?i={ingredient}")
-            response.raise_for_status()
-            data = response.json()
-            recipes = data.get("meals", []) or [] #fängt None ab
-            logger.info(f"Found {len(recipes)} recipes for ingredient: {ingredient}")
+            recipes = []
+            logger.info(f"1. Search input ingrident: {ingredient}")
+            similar_ingredients = self._similarity_cache.get(ingredient, []) if self._similarity_cache else [ingredient]
+            logger.info(f"2.Liste der ingredients: {similar_ingredients}")
+            for ing,score in similar_ingredients:
+                logger.info(f"Searching recipes for ingredient: {ing}")
+                response = self.session.get(f"{BASE_URL}/filter.php?i={ing}")
+                response.raise_for_status()
+                data = response.json()
+                recipes.extend(data.get("meals", []) or []) #fängt None ab
+                logger.info(f"Found {len(recipes)} recipes for ingredient: {ing}")
             return recipes
         except requests.RequestException as e:
             logger.error(f"Error searching recipes for {ingredient}: {e}")

@@ -1,0 +1,9680 @@
+{
+  "Chicken": [
+    [
+      "Chicken",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken drumsticks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Salmon": [
+    [
+      "Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot Smoked Flaked Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef": [
+    [
+      "Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lean Minced Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Corned Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Feather blade beef",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork": [
+    [
+      "Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Avocado": [
+    [
+      "Avocado",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Apple Cider Vinegar": [
+    [
+      "Apple Cider Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Cider Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Asparagus": [
+    [
+      "Asparagus",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Asparagus",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Aubergine": [
+    [
+      "Aubergine",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Baby Aubergine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baby Plum Tomatoes": [
+    [
+      "Baby Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bacon": [
+    [
+      "Bacon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Streaky Bacon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baking Powder": [
+    [
+      "Baking Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Balsamic Vinegar": [
+    [
+      "Balsamic Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Basil": [
+    [
+      "Basil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Basil Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fresh Basil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Basil Leaves": [
+    [
+      "Basil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Basil Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Basmati Rice": [
+    [
+      "Basmati Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bay Leaf": [
+    [
+      "Bay Leaf",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bay Leaves",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.88)"
+    ]
+  ],
+  "Bay Leaves": [
+    [
+      "Bay Leaf",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.88)"
+    ],
+    [
+      "Bay Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Brisket": [
+    [
+      "Beef Brisket",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Fillet": [
+    [
+      "Beef Fillet",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fillet Of Steak",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.83)"
+    ]
+  ],
+  "Beef Gravy": [
+    [
+      "Beef Gravy",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Stock": [
+    [
+      "Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsalted Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bicarbonate Of Soda": [
+    [
+      "Bicarbonate Of Soda",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Biryani Masala": [
+    [
+      "Biryani Masala",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Black Pepper": [
+    [
+      "Black Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Yellow Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Black Treacle": [
+    [
+      "Black Treacle",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Treacle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Borlotti Beans": [
+    [
+      "Borlotti Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bowtie Pasta": [
+    [
+      "Bowtie Pasta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bramley Apples": [
+    [
+      "Bramley Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Brandy": [
+    [
+      "Brandy",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wholegrain Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Crusty Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Naan Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bread Rolls",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pita Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rye Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Stale bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Breadcrumbs": [
+    [
+      "Breadcrumbs",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Broccoli": [
+    [
+      "Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chinese Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Purple Sprouting Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Brown Lentils": [
+    [
+      "Brown Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "French Lentils",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Green Red Lentils",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.86)"
+    ],
+    [
+      "Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Brown Rice": [
+    [
+      "Brown Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Brown Sugar": [
+    [
+      "Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Soft Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.89)"
+    ],
+    [
+      "Dark Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.88)"
+    ]
+  ],
+  "Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilled Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peanut Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vegan Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsalted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Melted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cacao": [
+    [
+      "Cacao",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cajun": [
+    [
+      "Cajun",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Canned Tomatoes": [
+    [
+      "Canned Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chopped Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Diced Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.72)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tinned Tomatos",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.65)"
+    ]
+  ],
+  "Cannellini Beans": [
+    [
+      "Cannellini Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cardamom": [
+    [
+      "Cardamom",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Carrots": [
+    [
+      "Carrots",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cashew Nuts": [
+    [
+      "Cashew Nuts",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cashews",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.89)"
+    ]
+  ],
+  "Cashews": [
+    [
+      "Cashew Nuts",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.89)"
+    ],
+    [
+      "Cashews",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Caster Sugar": [
+    [
+      "Caster Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Golden Caster Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cayenne Pepper": [
+    [
+      "Cayenne Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Celeriac": [
+    [
+      "Celeriac",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Celery",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.84)"
+    ]
+  ],
+  "Celery": [
+    [
+      "Celeriac",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.84)"
+    ],
+    [
+      "Celery",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Celery Salt": [
+    [
+      "Celery Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Challots": [
+    [
+      "Challots",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Charlotte Potatoes": [
+    [
+      "Charlotte Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cheddar Cheese": [
+    [
+      "Cheddar Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cheese": [
+    [
+      "Cheddar Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Colby Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cubed Feta Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Gouda Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Monterey Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Parmesan Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shredded Mexican Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shredded Monterey Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cream Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Stilton Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cheese Slices",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "västerbottensost cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bryndza cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Liquid Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Emmentaler Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Corn Arepa Filled With Mozarella Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cheese Curds": [
+    [
+      "Cheese Curds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cherry Tomatoes": [
+    [
+      "Cherry Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Grape Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Chestnut Mushroom": [
+    [
+      "Chestnut Mushroom",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mushrooms",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Chicken Breast": [
+    [
+      "Chicken Breast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken Breasts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken Breasts": [
+    [
+      "Chicken Breast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken Breasts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken Legs": [
+    [
+      "Chicken Legs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken Thighs",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Duck Legs",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Chicken Stock": [
+    [
+      "Chicken Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken Thighs": [
+    [
+      "Chicken Legs",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Chicken Thighs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken Wings",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.66)"
+    ]
+  ],
+  "Chickpeas": [
+    [
+      "Chickpeas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Can of chickpeas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chili Powder": [
+    [
+      "Chili Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.88)"
+    ],
+    [
+      "Red Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.80)"
+    ],
+    [
+      "Hot Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.85)"
+    ]
+  ],
+  "Chilled Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilled Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Melted Butter",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ]
+  ],
+  "Chilli": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ancho Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Red Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Birds-eye Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chilli Powder": [
+    [
+      "Chili Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.88)"
+    ],
+    [
+      "Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilli Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Chinese Broccoli": [
+    [
+      "Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chinese Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chocolate Chips": [
+    [
+      "Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chopped Onion": [
+    [
+      "Chopped Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onions",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.81)"
+    ],
+    [
+      "Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chopped Parsley": [
+    [
+      "Chopped Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Freshly Chopped Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chopped Tomatoes": [
+    [
+      "Canned Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Chopped Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Diced Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chorizo": [
+    [
+      "Chorizo",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Christmas Pudding": [
+    [
+      "Christmas Pudding",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cilantro": [
+    [
+      "Cilantro",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cilantro Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cinnamon": [
+    [
+      "Cinnamon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Cinnamon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cinnamon Stick": [
+    [
+      "Cinnamon Stick",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cloves": [
+    [
+      "Cloves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Garlic Clove",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.82)"
+    ]
+  ],
+  "Coco Sugar": [
+    [
+      "Coco Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cocoa": [
+    [
+      "Cocoa",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsweetened Cocoa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Coconut Cream": [
+    [
+      "Coconut Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coconut Milk",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Coconut Milk": [
+    [
+      "Coconut Cream",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Coconut Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsweetened Coconut Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Colby Jack Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Colby Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cold Water": [
+    [
+      "Cold Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Warm Water",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.83)"
+    ]
+  ],
+  "Condensed Milk": [
+    [
+      "Condensed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweetened Condensed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Coriander": [
+    [
+      "Coriander",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coriander Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coriander Seeds",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Coriander",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Coriander Leaves": [
+    [
+      "Coriander",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coriander Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coriander Seeds",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.79)"
+    ],
+    [
+      "Ground Coriander",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.80)"
+    ]
+  ],
+  "Coriander Seeds": [
+    [
+      "Coriander",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Coriander Leaves",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.79)"
+    ],
+    [
+      "Coriander Seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Corn Tortillas": [
+    [
+      "Corn Tortillas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flour Tortilla",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Tortillas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cornstarch": [
+    [
+      "Cornstarch",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cream": [
+    [
+      "Coconut Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Double Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Heavy Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ice Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sour Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Clotted Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Single Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Full fat sour cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Whipping Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Creme Fraiche": [
+    [
+      "Creme Fraiche",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cubed Feta Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cubed Feta Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cucumber": [
+    [
+      "Cucumber",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Persian Cucumber",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cumin": [
+    [
+      "Cumin",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cumin Seeds",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Cumin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cumin Seeds": [
+    [
+      "Cumin",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Cumin Seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Curry Powder": [
+    [
+      "Curry Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jamaican Curry Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dark Brown Sugar": [
+    [
+      "Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Soft Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.96)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.90)"
+    ],
+    [
+      "Dark Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.96)"
+    ]
+  ],
+  "Dark Soft Brown Sugar": [
+    [
+      "Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.96)"
+    ],
+    [
+      "Dark Soft Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.96)"
+    ],
+    [
+      "Dark Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 1.00)"
+    ]
+  ],
+  "Dark Soy Sauce": [
+    [
+      "Dark Soy Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Soy Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Demerara Sugar": [
+    [
+      "Demerara Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Diced Tomatoes": [
+    [
+      "Canned Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.72)"
+    ],
+    [
+      "Chopped Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Diced Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.72)"
+    ]
+  ],
+  "Digestive Biscuits": [
+    [
+      "Digestive Biscuits",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dill": [
+    [
+      "Dill",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Doner Meat": [
+    [
+      "Doner Meat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Double Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Double Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Single Cream",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.83)"
+    ]
+  ],
+  "Dried Oregano": [
+    [
+      "Dried Oregano",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oregano",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dry White Wine": [
+    [
+      "Dry White Wine",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Wine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg Plants": [
+    [
+      "Egg Plants",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg Rolls": [
+    [
+      "Egg Rolls",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg Roll Wrappers",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ]
+  ],
+  "Egg White": [
+    [
+      "Egg White",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg Yolks": [
+    [
+      "Egg Yolks",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Eggs",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Eggs": [
+    [
+      "Egg Yolks",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flax Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Free-range Eggs, Beaten",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Enchilada Sauce": [
+    [
+      "Enchilada Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "English Mustard": [
+    [
+      "English Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Extra Virgin Olive Oil": [
+    [
+      "Extra Virgin Olive Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Olive Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fajita Seasoning": [
+    [
+      "Fajita Seasoning",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Farfalle": [
+    [
+      "Farfalle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fennel Bulb": [
+    [
+      "Fennel Bulb",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fennel Seeds": [
+    [
+      "Fennel Seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fennel",
+      "Safe Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fenugreek": [
+    [
+      "Fenugreek",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Feta": [
+    [
+      "Feta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fish Sauce": [
+    [
+      "Fish Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oyster Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Thai Fish Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Flaked Almonds": [
+    [
+      "Flaked Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Flax Eggs": [
+    [
+      "Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flax Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plain Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Self-raising Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Corn Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong White Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "All purpose flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almond Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chickpea Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong white bread flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong Wholemeal Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Semolina Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bread Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Buckwheat Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Flour Tortilla": [
+    [
+      "Corn Tortillas",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Flour Tortilla",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tortillas",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ]
+  ],
+  "Floury Potatoes": [
+    [
+      "Floury Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Free-range Egg, Beaten": [
+    [
+      "Free-range Egg, Beaten",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Free-range Eggs, Beaten",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.96)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Free-range Eggs, Beaten": [
+    [
+      "Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Free-range Egg, Beaten",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.96)"
+    ],
+    [
+      "Free-range Eggs, Beaten",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "French Lentils": [
+    [
+      "Brown Lentils",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "French Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Red Lentils",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fresh Basil": [
+    [
+      "Basil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fresh Basil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fresh Thyme": [
+    [
+      "Fresh Thyme",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Thyme",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Freshly Chopped Parsley": [
+    [
+      "Chopped Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Freshly Chopped Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fries": [
+    [
+      "Fries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Full Fat Yogurt": [
+    [
+      "Full Fat Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garam Masala": [
+    [
+      "Garam Masala",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garlic": [
+    [
+      "Garlic",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Garlic Clove",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Garlic",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wild Garlic Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garlic Clove": [
+    [
+      "Cloves",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.82)"
+    ],
+    [
+      "Garlic",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Garlic Clove",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garlic Powder": [
+    [
+      "Garlic Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garlic Sauce": [
+    [
+      "Garlic Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ghee": [
+    [
+      "Ghee",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ginger": [
+    [
+      "Ginger",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ginger Cordial",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Ginger",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ginger Cordial": [
+    [
+      "Ginger",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ginger Cordial",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ginger Garlic Paste": [
+    [
+      "Ginger Garlic Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ginger Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.88)"
+    ]
+  ],
+  "Ginger Paste": [
+    [
+      "Ginger Garlic Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.88)"
+    ],
+    [
+      "Ginger Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper Paste",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.80)"
+    ]
+  ],
+  "Golden Syrup": [
+    [
+      "Golden Syrup",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Gouda Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Gouda Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Granulated Sugar": [
+    [
+      "Granulated Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Grape Tomatoes": [
+    [
+      "Cherry Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Grape Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ],
+    [
+      "Grape leaves",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Greek Yogurt": [
+    [
+      "Greek Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Green Beans": [
+    [
+      "Green Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Green Chilli": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.83)"
+    ]
+  ],
+  "Green Olives": [
+    [
+      "Green Olives",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Black Olives",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.85)"
+    ]
+  ],
+  "Green Red Lentils": [
+    [
+      "Brown Lentils",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.86)"
+    ],
+    [
+      "French Lentils",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Green Red Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Green Salsa": [
+    [
+      "Green Salsa",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salsa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Almonds": [
+    [
+      "Ground Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Cumin": [
+    [
+      "Cumin",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Cumin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Ginger": [
+    [
+      "Ginger",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Ginger",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Gruyère": [
+    [
+      "Gruyère",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hard Taco Shells": [
+    [
+      "Hard Taco Shells",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Harissa Spice": [
+    [
+      "Harissa Spice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Heavy Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Heavy Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Honey": [
+    [
+      "Honey",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Clear Honey",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Horseradish": [
+    [
+      "Horseradish",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hot Beef Stock": [
+    [
+      "Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hotsauce": [
+    [
+      "Hotsauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ice Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ice Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Italian Fennel Sausages": [
+    [
+      "Italian Fennel Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Italian Seasoning": [
+    [
+      "Italian Seasoning",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jalapeno": [
+    [
+      "Jalapeno",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jasmine Rice": [
+    [
+      "Jasmine Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jerusalem Artichokes": [
+    [
+      "Jerusalem Artichokes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Kale": [
+    [
+      "Kale",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Khus Khus": [
+    [
+      "Khus Khus",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "King Prawns": [
+    [
+      "King Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw King Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tiger Prawns",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Kosher Salt": [
+    [
+      "Kosher Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb": [
+    [
+      "Lamb",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lamb Shanks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Loin Chops": [
+    [
+      "Lamb Loin Chops",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Mince": [
+    [
+      "Lamb Mince",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lasagne Sheets": [
+    [
+      "Lasagne Sheets",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lean Minced Beef": [
+    [
+      "Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lean Minced Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lean Minced Steak",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ]
+  ],
+  "Leek": [
+    [
+      "Leek",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lemon": [
+    [
+      "Lemon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lemons",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unwaxed Lemon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lemon Juice": [
+    [
+      "Lemon Juice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lime juice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Orange Juice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Lemon Zest": [
+    [
+      "Lemon Zest",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lemons": [
+    [
+      "Lemon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lemons",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lettuce": [
+    [
+      "Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Little Gem Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Iceberg Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Baby Lettuce Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lime": [
+    [
+      "Lime",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unwaxed Lime",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Little Gem Lettuce": [
+    [
+      "Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Little Gem Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Macaroni": [
+    [
+      "Macaroni",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mackerel": [
+    [
+      "Mackerel",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Madras Paste": [
+    [
+      "Madras Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Marjoram": [
+    [
+      "Marjoram",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Massaman Curry Paste": [
+    [
+      "Massaman Curry Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Panang Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Medjool Dates": [
+    [
+      "Medjool Dates",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Meringue Nests": [
+    [
+      "Meringue Nests",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Milk": [
+    [
+      "Coconut Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Condensed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Semi-skimmed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Soya Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Whole Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almond Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsweetened Coconut Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweetened Condensed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Minced Garlic": [
+    [
+      "Garlic",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Garlic",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Miniature Marshmallows": [
+    [
+      "Miniature Marshmallows",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mint": [
+    [
+      "Mint",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Mint",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Monterey Jack Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Monterey Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shredded Monterey Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mozzarella Balls": [
+    [
+      "Mozzarella Balls",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Muscovado Sugar": [
+    [
+      "Muscovado Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mushrooms": [
+    [
+      "Chestnut Mushroom",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wild Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shiitake Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wood Ear Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oyster Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mustard": [
+    [
+      "English Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mustard Seeds",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Dijon Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wholegrain Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mustard Powder": [
+    [
+      "Mustard Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mustard Seeds",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Mustard Seeds": [
+    [
+      "Mustard",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Mustard Powder",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Mustard Seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Nutmeg": [
+    [
+      "Nutmeg",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Nutmeg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oil": [
+    [
+      "Extra Virgin Olive Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Olive Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peanut Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sunflower Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vegetable Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rapeseed Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Truffle Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Canola Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Nut Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "High Heat Cooking Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Olive Oil": [
+    [
+      "Extra Virgin Olive Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Olive Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Onion Salt": [
+    [
+      "Onion Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onions",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Onions": [
+    [
+      "Chopped Onion",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.81)"
+    ],
+    [
+      "Onion Salt",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Spring Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Orange": [
+    [
+      "Orange",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Orange Zest": [
+    [
+      "Orange Zest",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oregano": [
+    [
+      "Dried Oregano",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oregano",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oyster Sauce": [
+    [
+      "Fish Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Oyster Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Paprika": [
+    [
+      "Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoky Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "sweet smoked paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot smoked paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Parma Ham": [
+    [
+      "Parma Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Parmesan": [
+    [
+      "Parmesan",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Parmesan Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Parmesan Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Parmigiano-reggiano": [
+    [
+      "Parmigiano-reggiano",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Parsley": [
+    [
+      "Chopped Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Freshly Chopped Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Parsley",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peanut Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peanut Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peanut Oil",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Peanut Cookies",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.81)"
+    ],
+    [
+      "Peanut Brittle",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.67)"
+    ]
+  ],
+  "Peanut Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peanut Butter",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Peanut Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peanuts": [
+    [
+      "Peanuts",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peanut Cookies",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Peas": [
+    [
+      "Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar Snap Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Frozen Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Split Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Snow Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Split Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pecorino": [
+    [
+      "Pecorino",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Penne Rigate": [
+    [
+      "Penne Rigate",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pepper": [
+    [
+      "Black Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cayenne Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sichuan Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Padron peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Roasted pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mixed peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Romano Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Peppadew Peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Red Peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pine Nuts": [
+    [
+      "Pine Nuts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pitted Black Olives": [
+    [
+      "Pitted Black Olives",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Black Olives",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Plain Chocolate": [
+    [
+      "Plain Chocolate",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Milk Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Dark Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "White Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Plain Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plain Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Corn Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "White Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "All purpose flour",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.82)"
+    ],
+    [
+      "Bread Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ]
+  ],
+  "Plum Tomatoes": [
+    [
+      "Baby Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Potato Starch": [
+    [
+      "Potato Starch",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Starch",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Potatoes": [
+    [
+      "Charlotte Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Floury Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Small Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yukon Gold Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Baby New Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jersey Royal Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "New Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Prawns": [
+    [
+      "Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tiger Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw Frozen Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Puff Pastry": [
+    [
+      "Puff Pastry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raspberry Jam": [
+    [
+      "Raspberry Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raw King Prawns": [
+    [
+      "King Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw King Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw tiger prawns",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.84)"
+    ],
+    [
+      "Raw Frozen Prawns",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Red Chilli Flakes": [
+    [
+      "Red Chilli Flakes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Red Pepper Flakes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.83)"
+    ],
+    [
+      "Chilli Flakes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Red Chillies",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Red Chilli": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Chilli",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.83)"
+    ],
+    [
+      "Red Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Red Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Chilli Powder": [
+    [
+      "Chili Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.80)"
+    ],
+    [
+      "Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli Flakes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Red Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.86)"
+    ]
+  ],
+  "Red Onions": [
+    [
+      "Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Onion",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Red Pepper": [
+    [
+      "Black Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Green Pepper",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.82)"
+    ],
+    [
+      "Roasted pepper",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.73)"
+    ],
+    [
+      "Sweet Red Peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Pepper Flakes": [
+    [
+      "Red Chilli Flakes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.83)"
+    ],
+    [
+      "Red Pepper Flakes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Wine": [
+    [
+      "Red Wine",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Wine",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Refried Beans": [
+    [
+      "Refried Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice": [
+    [
+      "Basmati Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Brown Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jasmine Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Paella Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sushi Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Arabic Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice Noodles": [
+    [
+      "Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.93)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flat Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "Brown Rice Noodle",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ]
+  ],
+  "Rice Stick Noodles": [
+    [
+      "Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.93)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flat Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Egg Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Brown Rice Noodle",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Rice Vermicelli": [
+    [
+      "Rice Vermicelli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vermicelli Pasta",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.87)"
+    ]
+  ],
+  "Rigatoni": [
+    [
+      "Rigatoni",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rocket": [
+    [
+      "Rocket",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rolled Oats": [
+    [
+      "Rolled Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Saffron": [
+    [
+      "Saffron",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sage": [
+    [
+      "Sage",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sake": [
+    [
+      "Sake",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Salsa": [
+    [
+      "Green Salsa",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salsa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Salt": [
+    [
+      "Celery Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Kosher Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onion Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sea Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Salted Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsalted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Melted Butter",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.77)"
+    ]
+  ],
+  "Sausages": [
+    [
+      "Italian Fennel Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "German Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Kabanos Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sea Salt": [
+    [
+      "Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sea Salt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Self-raising Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Self-raising Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Semi-skimmed Milk": [
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Semi-skimmed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sesame Seed": [
+    [
+      "Sesame Seed",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Oil",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Burger Buns",
+      "Safe Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shallots": [
+    [
+      "Shallots",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shredded Mexican Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shredded Mexican Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shredded Monterey Jack Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Monterey Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shredded Monterey Jack Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Small Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Small Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Baby New Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Red Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "New Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Smoked Paprika": [
+    [
+      "Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoky Paprika",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.84)"
+    ],
+    [
+      "sweet smoked paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot smoked paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Smoky Paprika": [
+    [
+      "Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Paprika",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.84)"
+    ],
+    [
+      "Smoky Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "sweet smoked paprika",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Hot smoked paprika",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ]
+  ],
+  "Sour Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sour Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Full fat sour cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Soy Sauce": [
+    [
+      "Dark Soy Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Soy Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Soya Milk": [
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Soya Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Spaghetti": [
+    [
+      "Spaghetti",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Spinach": [
+    [
+      "Spinach",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Spring Onions": [
+    [
+      "Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Spring Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Squash": [
+    [
+      "Squash",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Butternut Squash",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Stir-fry Vegetables": [
+    [
+      "Stir-fry Vegetables",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Strawberries": [
+    [
+      "Strawberries",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Blueberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Blackberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Sugar": [
+    [
+      "Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Caster Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coco Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Soft Brown Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Demerara Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Granulated Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Muscovado Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Icing Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Brown Soft Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Brown Soft Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Powdered Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Golden Caster Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "vanilla sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Palm Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sultanas": [
+    [
+      "Sultanas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sunflower Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sunflower Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tamarind Ball": [
+    [
+      "Tamarind Ball",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tamarind Paste": [
+    [
+      "Tamarind Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Thai Fish Sauce": [
+    [
+      "Fish Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Thai Fish Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Thai Green Curry Paste": [
+    [
+      "Thai Green Curry Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Thai Red Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.91)"
+    ],
+    [
+      "Panang Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Thai Red Curry Paste": [
+    [
+      "Thai Green Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.91)"
+    ],
+    [
+      "Thai Red Curry Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Panang Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Thyme": [
+    [
+      "Fresh Thyme",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Thyme",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tomato Ketchup": [
+    [
+      "Tomato Ketchup",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tomato Puree": [
+    [
+      "Tomato Puree",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tomatoes": [
+    [
+      "Baby Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Canned Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cherry Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chopped Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Diced Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Grape Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sun-Dried Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Beef tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Toor Dal": [
+    [
+      "Toor Dal",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tuna": [
+    [
+      "Tuna",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turmeric": [
+    [
+      "Turmeric",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turmeric Powder": [
+    [
+      "Turmeric Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turnips": [
+    [
+      "Turnips",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vanilla": [
+    [
+      "Vanilla",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vanilla Extract",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vanilla Extract": [
+    [
+      "Vanilla",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vanilla Extract",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Veal": [
+    [
+      "Veal",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vegan Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vegan Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vegetable Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vegetable Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vegetable Stock": [
+    [
+      "Vegetable Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vegetable Stock Cube": [
+    [
+      "Vegetable Stock Cube",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken Stock Cube",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Vinaigrette Dressing": [
+    [
+      "Vinaigrette Dressing",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vine Leaves": [
+    [
+      "Vine Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Grape leaves",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Vinegar": [
+    [
+      "Apple Cider Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Balsamic Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Malt Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cider Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sherry vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vegan White Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Seasoned Rice Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Water": [
+    [
+      "Cold Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Orange Blossom Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rose water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Warm Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Boiling Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Soda Water",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Chocolate Chips": [
+    [
+      "Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Chocolate Chips",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.86)"
+    ]
+  ],
+  "White Fish": [
+    [
+      "White Fish",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Fish Fillets": [
+    [
+      "White Fish Fillets",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fish fillet",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Vinegar": [
+    [
+      "Apple Cider Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Balsamic Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Wine Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Rice Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "White Wine Vinegar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.89)"
+    ],
+    [
+      "Cider Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Sherry vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "White Wine": [
+    [
+      "Dry White Wine",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Wine",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "White Wine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Whole Milk": [
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Whole Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Whole Wheat": [
+    [
+      "Whole Wheat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Wholegrain Bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wholegrain Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Worcestershire Sauce": [
+    [
+      "Worcestershire Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yogurt": [
+    [
+      "Full Fat Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Greek Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yogurt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Zucchini": [
+    [
+      "Zucchini",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pretzels": [
+    [
+      "Pretzels",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cream Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cream Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Icing Sugar": [
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Icing Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Toffee Popcorn": [
+    [
+      "Toffee Popcorn",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Caramel": [
+    [
+      "Caramel",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Caramel Sauce": [
+    [
+      "Caramel Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Caramelized Sugar Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ]
+  ],
+  "Tagliatelle": [
+    [
+      "Tagliatelle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fettuccine": [
+    [
+      "Fettuccine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Clotted Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Clotted Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Corn Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plain Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Corn Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bread Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Mussels": [
+    [
+      "Mussels",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fideo": [
+    [
+      "Fideo",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Monkfish": [
+    [
+      "Monkfish",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vermicelli Pasta": [
+    [
+      "Rice Vermicelli",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "Vermicelli Pasta",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ]
+  ],
+  "Baby Squid": [
+    [
+      "Baby Squid",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Squid",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Squid": [
+    [
+      "Baby Squid",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Squid",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fish Stock": [
+    [
+      "Fish Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Seafood stock",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ],
+    [
+      "Shrimp Stock",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Pilchards": [
+    [
+      "Pilchards",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Black Olives": [
+    [
+      "Green Olives",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.85)"
+    ],
+    [
+      "Pitted Black Olives",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Black Olives",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Onion": [
+    [
+      "Chopped Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Spring Onions",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tomato": [
+    [
+      "Baby Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Canned Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cherry Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chopped Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Diced Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Grape Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tinned Tomatos",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sun-Dried Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Beef tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Duck": [
+    [
+      "Duck",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Duck Legs": [
+    [
+      "Chicken Legs",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Duck Legs",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken Stock Cube": [
+    [
+      "Vegetable Stock Cube",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Chicken Stock Cube",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Beef Stock Cubes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Pappardelle Pasta": [
+    [
+      "Pappardelle Pasta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Paccheri Pasta": [
+    [
+      "Paccheri Pasta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Linguine Pasta": [
+    [
+      "Linguine Pasta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sugar Snap Peas": [
+    [
+      "Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar Snap Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Crusty Bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Crusty Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fromage Frais": [
+    [
+      "Fromage Frais",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Clams": [
+    [
+      "Clams",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Passata": [
+    [
+      "Passata",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rapeseed Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rapeseed Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Stilton Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Stilton Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Leg": [
+    [
+      "Lamb Leg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Shoulder": [
+    [
+      "Lamb Shoulder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Apricot": [
+    [
+      "Apricot",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Apricots",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Butternut Squash": [
+    [
+      "Squash",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Butternut Squash",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Couscous": [
+    [
+      "Couscous",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Minced Beef": [
+    [
+      "Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lean Minced Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turkey Mince": [
+    [
+      "Turkey Mince",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Barbeque Sauce": [
+    [
+      "Barbeque Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sweetcorn": [
+    [
+      "Sweetcorn",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Goose Fat": [
+    [
+      "Goose Fat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Duck Fat": [
+    [
+      "Duck Fat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fennel": [
+    [
+      "Fennel Seeds",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Fennel",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Wine Vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Red Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Wine Vinegar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.85)"
+    ]
+  ],
+  "Haricot Beans": [
+    [
+      "Haricot Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rosemary": [
+    [
+      "Rosemary",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Butter Beans": [
+    [
+      "Butter Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Baked Beans",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Pinto Beans": [
+    [
+      "Pinto Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tomato Sauce": [
+    [
+      "Soy Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Tomato Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mascarpone": [
+    [
+      "Mascarpone",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mozzarella": [
+    [
+      "Mozzarella",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ricotta": [
+    [
+      "Ricotta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Apricots": [
+    [
+      "Apricot",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Apricots",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Capers": [
+    [
+      "Capers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Banana": [
+    [
+      "Banana",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fried Ripe Bananas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raspberries": [
+    [
+      "Raspberries",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Blackberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Blueberries": [
+    [
+      "Strawberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Blueberries",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Blackberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ]
+  ],
+  "Walnuts": [
+    [
+      "Walnuts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pecan Nuts": [
+    [
+      "Pecan Nuts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Maple Syrup": [
+    [
+      "Maple Syrup",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar Syrup",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Light Brown Soft Sugar": [
+    [
+      "Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.89)"
+    ],
+    [
+      "Dark Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.90)"
+    ],
+    [
+      "Dark Soft Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.96)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Brown Soft Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.96)"
+    ]
+  ],
+  "Dark Brown Soft Sugar": [
+    [
+      "Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.88)"
+    ],
+    [
+      "Dark Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.96)"
+    ],
+    [
+      "Dark Soft Brown Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Brown Soft Sugar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.96)"
+    ],
+    [
+      "Dark Brown Soft Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dark Chocolate Chips": [
+    [
+      "Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Chocolate Chips",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.86)"
+    ],
+    [
+      "Dark Chocolate Chips",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Milk Chocolate": [
+    [
+      "Plain Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Milk Chocolate",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dark Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "White Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Dark Chocolate": [
+    [
+      "Plain Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Milk Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Dark Chocolate",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ]
+  ],
+  "Pumpkin": [
+    [
+      "Pumpkin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shortcrust Pastry": [
+    [
+      "Shortcrust Pastry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ready rolled shortcrust pastry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peanut Cookies": [
+    [
+      "Peanut Butter",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.81)"
+    ],
+    [
+      "Peanuts",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Peanut Cookies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Gelatine Leafs": [
+    [
+      "Gelatine Leafs",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peanut Brittle": [
+    [
+      "Peanut Butter",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.67)"
+    ],
+    [
+      "Peanut Brittle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peaches": [
+    [
+      "Peaches",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yellow Pepper": [
+    [
+      "Black Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Yellow Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ]
+  ],
+  "Green Pepper": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.82)"
+    ],
+    [
+      "Yellow Pepper",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Green Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Courgettes": [
+    [
+      "Courgettes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tinned Tomatos": [
+    [
+      "Canned Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.65)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tinned Tomatos",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.66)"
+    ]
+  ],
+  "Chestnuts": [
+    [
+      "Chestnuts",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cooked Chestnut",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ]
+  ],
+  "Wild Mushrooms": [
+    [
+      "Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wild Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Truffle Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Truffle Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Paneer": [
+    [
+      "Paneer",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Naan Bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Naan Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lentils": [
+    [
+      "Brown Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "French Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Green Red Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lentils",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Roasted Vegetables": [
+    [
+      "Roasted Vegetables",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw Vegetables",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.69)"
+    ]
+  ],
+  "Kidney Beans": [
+    [
+      "Kidney Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mixed Grain": [
+    [
+      "Mixed Grain",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tahini": [
+    [
+      "Tahini",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tortillas": [
+    [
+      "Corn Tortillas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flour Tortilla",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Tortillas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Udon Noodles": [
+    [
+      "Udon Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Savoy Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chinese Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hispi (sweetheart) Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cabbage Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Napa Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shiitake Mushrooms": [
+    [
+      "Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shiitake Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mirin": [
+    [
+      "Mirin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sesame Seed Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baguette": [
+    [
+      "Baguette",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vine Tomatoes": [
+    [
+      "Cherry Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Diced Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.72)"
+    ],
+    [
+      "Grape Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ],
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tinned Tomatos",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.66)"
+    ],
+    [
+      "Vine Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Suet": [
+    [
+      "Suet",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Swede": [
+    [
+      "Swede",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ham": [
+    [
+      "Parma Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Serrano Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Turkey Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oysters": [
+    [
+      "Oysters",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oyster Mushrooms",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Stout": [
+    [
+      "Stout",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lard": [
+    [
+      "Lard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Kidney": [
+    [
+      "Lamb Kidney",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Kidney": [
+    [
+      "Beef Kidney",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Haddock": [
+    [
+      "Haddock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Haddock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Smoked Haddock": [
+    [
+      "Haddock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Haddock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Brussels Sprouts": [
+    [
+      "Brussels Sprouts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raisins": [
+    [
+      "Raisins",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Currants": [
+    [
+      "Currants",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Custard": [
+    [
+      "Custard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vanilla Custard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mixed Peel": [
+    [
+      "Mixed Peel",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Redcurrants": [
+    [
+      "Redcurrants",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Blackberries": [
+    [
+      "Strawberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Raspberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Blueberries",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "Blackberries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hazlenuts": [
+    [
+      "Hazlenuts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Braeburn Apples": [
+    [
+      "Braeburn Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Food Colouring": [
+    [
+      "Red Food Colouring",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pink Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.76)"
+    ],
+    [
+      "Blue Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.72)"
+    ],
+    [
+      "Yellow Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.75)"
+    ]
+  ],
+  "Pink Food Colouring": [
+    [
+      "Red Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.76)"
+    ],
+    [
+      "Pink Food Colouring",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Blue Food Colouring": [
+    [
+      "Red Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.72)"
+    ],
+    [
+      "Blue Food Colouring",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Yellow Food Colouring": [
+    [
+      "Red Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.75)"
+    ],
+    [
+      "Blue Food Colouring",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Yellow Food Colouring",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Apricot Jam": [
+    [
+      "Apricot Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Marzipan": [
+    [
+      "Marzipan",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Almonds": [
+    [
+      "Flaked Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almonds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almond Milk",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Black Pudding": [
+    [
+      "Black Pudding",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baked Beans": [
+    [
+      "Butter Beans",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Baked Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Broad Beans",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.69)"
+    ],
+    [
+      "Black Beans",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.71)"
+    ]
+  ],
+  "White Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plain Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "White Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong White Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong white bread flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Bread Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Yeast": [
+    [
+      "Yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fast action yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Instant Yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fruit Mix": [
+    [
+      "Fruit Mix",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Fruit": [
+    [
+      "Dried Fruit",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cherry": [
+    [
+      "Cherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Glace Cherry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Glace Cherry": [
+    [
+      "Cherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Glace Cherry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Treacle": [
+    [
+      "Black Treacle",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Treacle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oatmeal": [
+    [
+      "Oatmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oats",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.82)"
+    ]
+  ],
+  "Oats": [
+    [
+      "Rolled Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oatmeal",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.82)"
+    ],
+    [
+      "Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Porridge oats",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg": [
+    [
+      "Egg Rolls",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg White",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flax Eggs",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Free-range Egg, Beaten",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Free-range Eggs, Beaten",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Shin": [
+    [
+      "Beef Shin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bouquet Garni": [
+    [
+      "Bouquet Garni",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Single Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Double Cream",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.83)"
+    ],
+    [
+      "Single Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Wine Jelly": [
+    [
+      "Red Wine Jelly",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Apples": [
+    [
+      "Bramley Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Braeburn Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Apples",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Goats Cheese": [
+    [
+      "Goats Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Prosciutto": [
+    [
+      "Prosciutto",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unsalted Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsalted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Melted Butter",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Brie": [
+    [
+      "Brie",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tarragon Leaves": [
+    [
+      "Tarragon Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chives": [
+    [
+      "Chives",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pears": [
+    [
+      "Pears",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Chocolate": [
+    [
+      "Plain Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Milk Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Dark Chocolate",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "White Chocolate",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Star Anise": [
+    [
+      "Star Anise",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tiger Prawns": [
+    [
+      "King Prawns",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tiger Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Custard Powder": [
+    [
+      "Custard Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Desiccated Coconut": [
+    [
+      "Desiccated Coconut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Frozen Peas": [
+    [
+      "Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Frozen Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Snow Peas",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.87)"
+    ]
+  ],
+  "Minced Pork": [
+    [
+      "Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Minced Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Creamed Corn": [
+    [
+      "Creamed Corn",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sun-Dried Tomatoes": [
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sun-Dried Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dijon Mustard": [
+    [
+      "Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dijon Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tabasco Sauce": [
+    [
+      "Tabasco Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Canola Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Canola Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cod": [
+    [
+      "Cod",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salt Cod",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Salt Cod": [
+    [
+      "Cod",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Salt Cod",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ackee": [
+    [
+      "Ackee",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jerk": [
+    [
+      "Jerk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Beef": [
+    [
+      "Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baby Aubergine": [
+    [
+      "Aubergine",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Baby Aubergine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Paella Rice": [
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Paella Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Scotch Bonnet": [
+    [
+      "Scotch Bonnet",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oxtail": [
+    [
+      "Oxtail",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Broad Beans": [
+    [
+      "Baked Beans",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.69)"
+    ],
+    [
+      "Broad Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Snapper": [
+    [
+      "Red Snapper",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Malt Vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Malt Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice Vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Rice Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Seasoned Rice Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Water Chestnut": [
+    [
+      "Water Chestnut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tofu": [
+    [
+      "Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Marinated Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Silken Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Doubanjiang": [
+    [
+      "Doubanjiang",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fermented Black Beans": [
+    [
+      "Fermented Black Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Black Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Scallions": [
+    [
+      "Scallions",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sichuan Pepper": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sichuan Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Wonton Skin": [
+    [
+      "Wonton Skin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Starch": [
+    [
+      "Potato Starch",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Starch",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice wine": [
+    [
+      "Rice wine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cooking wine": [
+    [
+      "Cooking wine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Duck Sauce": [
+    [
+      "Duck Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Gochujang": [
+    [
+      "Gochujang",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bean Sprouts": [
+    [
+      "Bean Sprouts",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mung Bean Sprouts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Noodles": [
+    [
+      "Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Udon Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flat Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Wood Ear Mushrooms": [
+    [
+      "Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wood Ear Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dark Rum": [
+    [
+      "Dark Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Rum",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.87)"
+    ],
+    [
+      "Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Light Rum": [
+    [
+      "Dark Rum",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.87)"
+    ],
+    [
+      "Light Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rum": [
+    [
+      "Dark Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Light Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Appleton rum",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "English Muffins": [
+    [
+      "English Muffins",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Muffins",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Muffins": [
+    [
+      "English Muffins",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Muffins",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Wine Vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.89)"
+    ],
+    [
+      "Red Wine Vinegar",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.85)"
+    ],
+    [
+      "White Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sherry vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Vegan White Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Smoked Salmon": [
+    [
+      "Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot Smoked Flaked Salmon",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ]
+  ],
+  "Mars Bar": [
+    [
+      "Mars Bar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice Krispies": [
+    [
+      "Rice Krispies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ancho Chillies": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ancho Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Almond Milk": [
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almonds",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Almond Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Allspice": [
+    [
+      "Allspice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Allspice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Almond Extract": [
+    [
+      "Almond Extract",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almond Essence",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Tripe": [
+    [
+      "Tripe",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Goat Meat": [
+    [
+      "Goat Meat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Black Beans": [
+    [
+      "Baked Beans",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.71)"
+    ],
+    [
+      "Fermented Black Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Black Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Anchovy Fillet": [
+    [
+      "Anchovy Fillet",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ras el hanout": [
+    [
+      "Ras el hanout",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Filo Pastry": [
+    [
+      "Filo Pastry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Orange Blossom Water": [
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Orange Blossom Water",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Candied Peel": [
+    [
+      "Candied Peel",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Grand Marnier": [
+    [
+      "Grand Marnier",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sherry": [
+    [
+      "Sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dry sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rose water": [
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rose water",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mixed Spice": [
+    [
+      "Mixed Spice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mixed peppers",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Mincemeat": [
+    [
+      "Mincemeat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sweet Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Small Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Sweet Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "New Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Bread Rolls": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bread Rolls",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bun": [
+    [
+      "Bun",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Potatoe Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Burger Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Potatoe Buns": [
+    [
+      "Bun",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Potatoe Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Pork": [
+    [
+      "Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Pork",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork Chops": [
+    [
+      "Pork Chops",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yukon Gold Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yukon Gold Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yellow Onion": [
+    [
+      "Red Onions",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Onion",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Stock Concentrate": [
+    [
+      "Beef Stock Concentrate",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken Stock Concentrate",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.74)"
+    ]
+  ],
+  "Chicken Stock Concentrate": [
+    [
+      "Beef Stock Concentrate",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.74)"
+    ],
+    [
+      "Chicken Stock Concentrate",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Persian Cucumber": [
+    [
+      "Cucumber",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Persian Cucumber",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mayonnaise": [
+    [
+      "Mayonnaise",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sriracha": [
+    [
+      "Sriracha",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rhubarb": [
+    [
+      "Rhubarb",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pita Bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pita Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bulgur Wheat": [
+    [
+      "Bulgur Wheat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Quinoa": [
+    [
+      "Quinoa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dill Pickles": [
+    [
+      "Dill Pickles",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sesame Seed Burger Buns": [
+    [
+      "Sesame Seed",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Bun",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Burger Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Buns": [
+    [
+      "Bun",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Potatoe Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sesame Seed Burger Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Buns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Iceberg Lettuce": [
+    [
+      "Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Iceberg Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Gherkin Relish": [
+    [
+      "Gherkin Relish",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cheese Slices": [
+    [
+      "Cheese",
+      "Safe Head Match (Score: 1.00)"
+    ],
+    [
+      "Cheese Slices",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shortening": [
+    [
+      "Shortening",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Warm Water": [
+    [
+      "Cold Water",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.83)"
+    ],
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Warm Water",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Boiling Water": [
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Boiling Water",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pickle Juice": [
+    [
+      "Pickle Juice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Powdered Sugar": [
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Powdered Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Kielbasa": [
+    [
+      "Kielbasa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Polish Sausage": [
+    [
+      "Polish Sausage",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sauerkraut": [
+    [
+      "Sauerkraut",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Sauerkraut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Caraway Seed": [
+    [
+      "Caraway Seed",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Herring": [
+    [
+      "Herring",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jam": [
+    [
+      "Raspberry Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Apricot Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Thai Chilli Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Blackcurrant Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mulukhiyah": [
+    [
+      "Mulukhiyah",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sushi Rice": [
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sushi Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Figs": [
+    [
+      "Figs",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cider": [
+    [
+      "Cider",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beetroot": [
+    [
+      "Beetroot",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cooked Beetroot",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sardines": [
+    [
+      "Sardines",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ciabatta": [
+    [
+      "Ciabatta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Buckwheat": [
+    [
+      "Buckwheat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Prunes": [
+    [
+      "Prunes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Grape leaves": [
+    [
+      "Grape Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Vine Leaves",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Grape leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Falafel": [
+    [
+      "Falafel",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Green Cardamom Pods": [
+    [
+      "Green Cardamom Pods",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Black Cardamom Pods",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Black Cardamom Pods": [
+    [
+      "Green Cardamom Pods",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Black Cardamom Pods",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Corned Beef": [
+    [
+      "Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Corned Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Nutella": [
+    [
+      "Nutella",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Feather blade beef": [
+    [
+      "Beef",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Feather blade beef",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mature Cheddar": [
+    [
+      "Mature Cheddar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Stock Cubes": [
+    [
+      "Chicken Stock Cube",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Beef Stock Cubes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lean Minced Steak": [
+    [
+      "Lean Minced Beef",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ],
+    [
+      "Lean Minced Steak",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cooked Beetroot": [
+    [
+      "Beetroot",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cooked Beetroot",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Soured cream and chive dip": [
+    [
+      "Soured cream and chive dip",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unwaxed Lemon": [
+    [
+      "Lemon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unwaxed Lemon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cocoa Powder": [
+    [
+      "Cocoa Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Can of chickpeas": [
+    [
+      "Chickpeas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Can of chickpeas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "barramundi": [
+    [
+      "barramundi",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Golden Caster Sugar": [
+    [
+      "Caster Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Golden Caster Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baby New Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Small Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Baby New Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "New Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hot Chilli Powder": [
+    [
+      "Chili Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.85)"
+    ],
+    [
+      "Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.86)"
+    ],
+    [
+      "Hot Chilli Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chilli Flakes": [
+    [
+      "Red Chilli Flakes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilli Flakes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Streaky Bacon": [
+    [
+      "Bacon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Streaky Bacon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Clear Honey": [
+    [
+      "Honey",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Clear Honey",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jersey Royal Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jersey Royal Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Natural Yoghurt": [
+    [
+      "Natural Yoghurt",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Appleton rum": [
+    [
+      "Rum",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Appleton rum",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chinese five spice powder": [
+    [
+      "Chinese five spice powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Five Spice Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "sweet chilli sauce": [
+    [
+      "sweet chilli sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilli Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Cinnamon": [
+    [
+      "Cinnamon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Cinnamon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chopped Chive": [
+    [
+      "Chopped Chive",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ready rolled shortcrust pastry": [
+    [
+      "Shortcrust Pastry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ready rolled shortcrust pastry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken drumsticks": [
+    [
+      "Chicken",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chicken drumsticks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Porridge oats": [
+    [
+      "Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Porridge oats",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sirloin Steak tips": [
+    [
+      "Sirloin Steak tips",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Cornmeal": [
+    [
+      "White Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fine Yellow Cornmeal",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.84)"
+    ]
+  ],
+  "Cider Vinegar": [
+    [
+      "Apple Cider Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Cider Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Strong White Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong White Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong white bread flour",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.90)"
+    ],
+    [
+      "Strong Wholemeal Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Fast action yeast": [
+    [
+      "Yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fast action yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Instant Yeast",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ]
+  ],
+  "Rye Bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rye Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "västerbottensost cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "västerbottensost cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Asparagus": [
+    [
+      "Asparagus",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Asparagus",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Full fat sour cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sour Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Full fat sour cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Instant Yeast": [
+    [
+      "Yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fast action yeast",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Instant Yeast",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "vanilla sugar": [
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "vanilla sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "vanilla pod": [
+    [
+      "vanilla pod",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shredded Coconut": [
+    [
+      "Shredded Coconut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Buttermilk": [
+    [
+      "Buttermilk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Melted Butter": [
+    [
+      "Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilled Butter",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Salted Butter",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.77)"
+    ],
+    [
+      "Unsalted Butter",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Melted Butter",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "All purpose flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plain Flour",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.82)"
+    ],
+    [
+      "All purpose flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fish fillet": [
+    [
+      "White Fish Fillets",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fish fillet",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shrimp": [
+    [
+      "Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jumbo Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Savoy Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Chinese Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.83)"
+    ],
+    [
+      "Red Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.86)"
+    ],
+    [
+      "Napa Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Whole black peppercorns": [
+    [
+      "Whole black peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Small Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Sweet Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Red Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "New Potatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.78)"
+    ]
+  ],
+  "Bouillon Cubes": [
+    [
+      "Bouillon Cubes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork knuckle": [
+    [
+      "Pork knuckle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Whipping Cream": [
+    [
+      "Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Whipping Cream",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Almond Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Almond Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mixed Beef Cuts": [
+    [
+      "Mixed Beef Cuts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Morcilla": [
+    [
+      "Morcilla",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Cutlet": [
+    [
+      "Beef Cutlet",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chimichurri sauce": [
+    [
+      "Chimichurri sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dulce de leche": [
+    [
+      "Dulce de leche",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chickpea Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chickpea Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef Flank Steak": [
+    [
+      "Beef Flank Steak",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "sweet smoked paprika": [
+    [
+      "Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoky Paprika",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "sweet smoked paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hot smoked paprika",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.90)"
+    ]
+  ],
+  "manchego": [
+    [
+      "manchego",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Wild Garlic Leaves": [
+    [
+      "Garlic",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wild Garlic Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "jamón ibérico": [
+    [
+      "jamón ibérico",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Strong white bread flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Strong White Flour",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.90)"
+    ],
+    [
+      "Strong white bread flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bread Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried white corn": [
+    [
+      "Dried white corn",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried white beans": [
+    [
+      "Dried white beans",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried White Navy Beans",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.92)"
+    ]
+  ],
+  "Seafood stock": [
+    [
+      "Fish Stock",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ],
+    [
+      "Seafood stock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Shrimp Stock",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.85)"
+    ]
+  ],
+  "Padron peppers": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Padron peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raw tiger prawns": [
+    [
+      "Raw King Prawns",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.84)"
+    ],
+    [
+      "Raw tiger prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw Frozen Prawns",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Dry sherry": [
+    [
+      "Sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dry sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Sherry",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Hake": [
+    [
+      "Hake",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sherry vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "White Wine Vinegar",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Sherry vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Roasted pepper": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.73)"
+    ],
+    [
+      "Roasted pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork belly slices": [
+    [
+      "Pork belly slices",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bacon lardon": [
+    [
+      "Bacon lardon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mixed peppers": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mixed Spice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Mixed peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Stale bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Stale bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried cranberries": [
+    [
+      "Dried cranberries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sweet Sherry": [
+    [
+      "Sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dry sherry",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Sweet Sherry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Frozen Seafood mix": [
+    [
+      "Frozen Seafood mix",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Savoy Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Savoy Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White bread": [
+    [
+      "Bread",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White bread",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hot smoked paprika": [
+    [
+      "Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoky Paprika",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "sweet smoked paprika",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.90)"
+    ],
+    [
+      "Hot smoked paprika",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garlic Bulb": [
+    [
+      "Garlic Bulb",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shelled Hazelnuts": [
+    [
+      "Shelled Hazelnuts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Serrano Ham": [
+    [
+      "Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Serrano Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beef tomatoes": [
+    [
+      "Tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Tomato",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Beef tomatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Semolina": [
+    [
+      "Semolina",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Poppy seeds": [
+    [
+      "Ground Poppy seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Poppy Seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bryndza cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bryndza cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Panang Curry Paste": [
+    [
+      "Massaman Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Thai Green Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Thai Red Curry Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Panang Curry Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "makrut lime leaves": [
+    [
+      "makrut lime leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lime Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Red Chillies": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Chilli Flakes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Red Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Red Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Chillies",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.93)"
+    ]
+  ],
+  "Shrimp Paste": [
+    [
+      "Shrimp Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Galangal": [
+    [
+      "Galangal",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lemongrass": [
+    [
+      "Lemongrass",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lemongrass Stalks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Coriander": [
+    [
+      "Coriander",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Coriander Leaves",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.80)"
+    ],
+    [
+      "Ground Coriander",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Nutmeg": [
+    [
+      "Nutmeg",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Nutmeg",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Flat Rice Noodles": [
+    [
+      "Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flat Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Birds-eye Chillies": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Birds-eye Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sirloin steak": [
+    [
+      "Sirloin steak",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lemongrass Stalks": [
+    [
+      "Lemongrass",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lemongrass Stalks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Oyster Mushrooms": [
+    [
+      "Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Oysters",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Oyster Mushrooms",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lime juice": [
+    [
+      "Lemon Juice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Lime juice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Orange Juice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Thai Chilli Jam": [
+    [
+      "Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Thai Chilli Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork Tenderloin": [
+    [
+      "Pork Tenderloin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chilli Sauce": [
+    [
+      "Chilli Powder",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "sweet chilli sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilli Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Nut Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Nut Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Runner Beans": [
+    [
+      "Runner Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Trout": [
+    [
+      "Trout",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rainbow Trout",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baby Pak Koi": [
+    [
+      "Baby Pak Koi",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vermicelli Rice Noodles": [
+    [
+      "Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Rice Vermicelli",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.87)"
+    ],
+    [
+      "Vermicelli Pasta",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Flat Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Vermicelli Rice Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raw Frozen Prawns": [
+    [
+      "Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Raw King Prawns",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Raw tiger prawns",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Raw Frozen Prawns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Galangal Paste": [
+    [
+      "Galangal Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lime Leaves": [
+    [
+      "makrut lime leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lime Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg Noodles": [
+    [
+      "Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Egg Noodles",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chinese Leaf": [
+    [
+      "Chinese Leaf",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Five Spice Powder": [
+    [
+      "Chinese five spice powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Five Spice Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Brown Rice Noodle": [
+    [
+      "Rice Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Rice Stick Noodles",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Brown Rice Noodle",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pak Choi": [
+    [
+      "Pak Choi",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bamboo Shoot": [
+    [
+      "Bamboo Shoot",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Knafeh": [
+    [
+      "Knafeh",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Arabic Rice": [
+    [
+      "Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Arabic Rice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hail": [
+    [
+      "Hail",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mixture Powder": [
+    [
+      "Mixture Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chuck Roast": [
+    [
+      "Chuck Roast",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Clove": [
+    [
+      "Ground Clove",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Cardomom": [
+    [
+      "Ground Cardomom",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Kabse Spice": [
+    [
+      "Kabse Spice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Garlic Granules": [
+    [
+      "Garlic Granules",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Toast": [
+    [
+      "Toast",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unsalted Pistachio": [
+    [
+      "Unsalted Pistachio",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pistachio",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Pistachios",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ]
+  ],
+  "Oreo Cream Biscuits": [
+    [
+      "Oreo Cream Biscuits",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sevaiiya": [
+    [
+      "Sevaiiya",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Malai": [
+    [
+      "Malai",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Liquid Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Liquid Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice Paper Sheets": [
+    [
+      "Rice Paper Sheets",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rainbow Trout": [
+    [
+      "Trout",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rainbow Trout",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bok Choi": [
+    [
+      "Bok Choi",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fillet Of Steak": [
+    [
+      "Beef Fillet",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.83)"
+    ],
+    [
+      "Fillet Of Steak",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chinese Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.83)"
+    ],
+    [
+      "Chinese Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Napa Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ]
+  ],
+  "Soda Water": [
+    [
+      "Water",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Soda Water",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Purple Sprouting Broccoli": [
+    [
+      "Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Purple Sprouting Broccoli",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Shanks": [
+    [
+      "Lamb",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Lamb Shanks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Lamb Stock": [
+    [
+      "Lamb Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Radish": [
+    [
+      "Radish",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Szechuan Peppercorns": [
+    [
+      "Szechuan Peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork Shoulder Steaks": [
+    [
+      "Pork Shoulder Steaks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Palm Sugar": [
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Palm Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Soya Bean": [
+    [
+      "Soya Bean",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Marinated Tofu": [
+    [
+      "Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Marinated Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hoisin Sauce": [
+    [
+      "Hoisin Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rice Flour Pancakes": [
+    [
+      "Rice Flour Pancakes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Bread Mix": [
+    [
+      "White Bread Mix",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Roasted Peanut": [
+    [
+      "Roasted Peanut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hot Smoked Flaked Salmon": [
+    [
+      "Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Salmon",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Hot Smoked Flaked Salmon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.86)"
+    ],
+    [
+      "Chinese Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Red Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Napa Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ]
+  ],
+  "Sea Bass": [
+    [
+      "Sea Bass",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sea Bass Fillets": [
+    [
+      "Sea Bass Fillets",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Petit Pois": [
+    [
+      "Petit Pois",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken Liver": [
+    [
+      "Chicken Liver",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turkey": [
+    [
+      "Turkey",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Raw Vegetables": [
+    [
+      "Roasted Vegetables",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.69)"
+    ],
+    [
+      "Raw Vegetables",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vegan White Wine Vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vegan White Wine Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hummus": [
+    [
+      "Hummus",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tempeh": [
+    [
+      "Tempeh",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Romano Pepper": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Romano Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Red Pepper Paste": [
+    [
+      "Ginger Paste",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.80)"
+    ],
+    [
+      "Red Pepper Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pomegranate Molasses": [
+    [
+      "Pomegranate Molasses",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Molasses",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pul Biber": [
+    [
+      "Pul Biber",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sumac": [
+    [
+      "Sumac",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Mint": [
+    [
+      "Mint",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Mint",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sweet Peppadew Peppers": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Peppadew Peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Red Peppers",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.71)"
+    ]
+  ],
+  "Chicken Wings": [
+    [
+      "Chicken Thighs",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.66)"
+    ],
+    [
+      "Chicken Wings",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pistachio": [
+    [
+      "Unsalted Pistachio",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Pistachio",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Pistachios",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Smoky Aïoli": [
+    [
+      "Smoky Aïoli",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tahini Paste": [
+    [
+      "Tahini Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Seasoning": [
+    [
+      "Seasoning",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Stoned Dates": [
+    [
+      "Stoned Dates",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Strong Wholemeal Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Strong White Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Strong Wholemeal Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turkish Delight": [
+    [
+      "Turkish Delight",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vanilla Custard": [
+    [
+      "Custard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Vanilla Custard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vanilla Bean Paste": [
+    [
+      "Vanilla Bean Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Chilli Bean Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ]
+  ],
+  "Ground Pistachios": [
+    [
+      "Unsalted Pistachio",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Pistachio",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Pistachios",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "New Potatoes": [
+    [
+      "Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Small Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Sweet Potatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Baby New Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Potatoes",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.78)"
+    ],
+    [
+      "New Potatoes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Semolina Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Semolina Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Freekeh": [
+    [
+      "Freekeh",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Emmentaler Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Emmentaler Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Phyllo Dough": [
+    [
+      "Phyllo Dough",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Plum Jam": [
+    [
+      "Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plum Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pistachio Paste": [
+    [
+      "Pistachio Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unwaxed Lime": [
+    [
+      "Lime",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unwaxed Lime",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Polish Kabanos": [
+    [
+      "Polish Kabanos",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hispi (sweetheart) Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Hispi (sweetheart) Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Baby Lettuce Leaves": [
+    [
+      "Lettuce",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Baby Lettuce Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pomegranate": [
+    [
+      "Pomegranate",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Almond Essence": [
+    [
+      "Almond Extract",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Almond Essence",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "German Sausages": [
+    [
+      "Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "German Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Juniper Berries": [
+    [
+      "Juniper Berries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Allspice Berries": [
+    [
+      "Allspice Berries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peppercorns": [
+    [
+      "Whole black peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Szechuan Peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Peppercorns",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Sauerkraut": [
+    [
+      "Sauerkraut",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Sauerkraut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork Shoulder": [
+    [
+      "Pork Shoulder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cabbage Leaves": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cabbage Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cooked Chestnut": [
+    [
+      "Chestnuts",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.81)"
+    ],
+    [
+      "Cooked Chestnut",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cranberry": [
+    [
+      "Cranberry",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pork Back Ribs": [
+    [
+      "Pork Back Ribs",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Rye": [
+    [
+      "Rye",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Poppy Seeds": [
+    [
+      "Ground Poppy seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Poppy Seeds",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Wholegrain Mustard": [
+    [
+      "Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Wholegrain Mustard",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Kabanos Sausages": [
+    [
+      "Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Kabanos Sausages",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Frozen Mixed Berries": [
+    [
+      "Frozen Mixed Berries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Blackcurrant Jam": [
+    [
+      "Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Blackcurrant Jam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg Wash": [
+    [
+      "Egg Wash",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Molasses": [
+    [
+      "Pomegranate Molasses",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Molasses",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Bread Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Plain Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.80)"
+    ],
+    [
+      "Corn Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "White Flour",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.77)"
+    ],
+    [
+      "Strong white bread flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Bread Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unsweetened Cocoa": [
+    [
+      "Cocoa",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsweetened Cocoa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Coconut Flakes": [
+    [
+      "Coconut Flakes",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Peach Juice": [
+    [
+      "Peach Juice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cornmeal": [
+    [
+      "White Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fine Yellow Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Hind Shank": [
+    [
+      "Hind Shank",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sweet Red Peppers": [
+    [
+      "Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Red Pepper",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweet Peppadew Peppers",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.71)"
+    ],
+    [
+      "Sweet Red Peppers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cassaba": [
+    [
+      "Cassaba",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yautia": [
+    [
+      "Yautia",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Yam": [
+    [
+      "White Yam",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Papelon": [
+    [
+      "Papelon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Skirty Steak": [
+    [
+      "Skirty Steak",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "White Masarepa": [
+    [
+      "White Masarepa",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Masarepa",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ]
+  ],
+  "Casabe": [
+    [
+      "Casabe",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turkey Ham": [
+    [
+      "Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Turkey Ham",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Oats": [
+    [
+      "Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Oats",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sugar Syrup": [
+    [
+      "Maple Syrup",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Sugar Syrup",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pre-fried Tequeños": [
+    [
+      "Pre-fried Tequeños",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Avacado Hass Pulp": [
+    [
+      "Avacado Hass Pulp",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sazon": [
+    [
+      "Sazon",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yellow Masarepa": [
+    [
+      "White Masarepa",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.87)"
+    ],
+    [
+      "Yellow Masarepa",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unflavoured Gelatin": [
+    [
+      "Unflavoured Gelatin",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Passion Fruit Pulp": [
+    [
+      "Passion Fruit Pulp",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Corn Arepa Filled With Mozarella Cheese": [
+    [
+      "Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Corn Arepa Filled With Mozarella Cheese",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fried Ripe Bananas": [
+    [
+      "Banana",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fried Ripe Bananas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pico De Gallo Sauce": [
+    [
+      "Pico De Gallo Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shredded Meat": [
+    [
+      "Shredded Meat",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Yellow Split Peas": [
+    [
+      "Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Split Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Split Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried White Navy Beans": [
+    [
+      "Dried white beans",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.92)"
+    ],
+    [
+      "Dried White Navy Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Vegetable Shortening": [
+    [
+      "Vegetable Shortening",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Saskatoon Berries": [
+    [
+      "Saskatoon Berries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pitted Dates": [
+    [
+      "Pitted Dates",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Graham Cracker Crumbs": [
+    [
+      "Graham Cracker Crumbs",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cream Of Tartar": [
+    [
+      "Cream Of Tartar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Leaves Of Summer Savoury": [
+    [
+      "Dried Leaves Of Summer Savoury",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Russet Potato": [
+    [
+      "Russet Potato",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "All-purpose Seasoning": [
+    [
+      "All-purpose Seasoning",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Grape Nut Cereal": [
+    [
+      "Grape Nut Cereal",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Beer": [
+    [
+      "Beer",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Caramelized Sugar Sauce": [
+    [
+      "Caramel Sauce",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.82)"
+    ],
+    [
+      "Caramelized Sugar Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Cherries": [
+    [
+      "Dried Cherries",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Annatto": [
+    [
+      "Ground Annatto",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shrimp Stock": [
+    [
+      "Fish Stock",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Seafood stock",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.85)"
+    ],
+    [
+      "Shrimp Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Snapper Fish": [
+    [
+      "Snapper Fish",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fish Seasoning": [
+    [
+      "Fish Seasoning",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Penne Pasta": [
+    [
+      "Penne Pasta",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jamaican Curry Powder": [
+    [
+      "Curry Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jamaican Curry Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Turkey Neck": [
+    [
+      "Turkey Neck",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Turkey Neck",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Smoked Turkey Neck": [
+    [
+      "Turkey Neck",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Smoked Turkey Neck",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Allspice": [
+    [
+      "Allspice",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Allspice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Tamarind Pulp": [
+    [
+      "Tamarind Pulp",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Callaloo": [
+    [
+      "Callaloo",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Jumbo Shrimp": [
+    [
+      "Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Jumbo Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unsweetened Coconut Milk": [
+    [
+      "Coconut Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsweetened Coconut Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Fine Yellow Cornmeal": [
+    [
+      "White Cornmeal",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.84)"
+    ],
+    [
+      "Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Fine Yellow Cornmeal",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Sweetened Condensed Milk": [
+    [
+      "Condensed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Sweetened Condensed Milk",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Orange Juice": [
+    [
+      "Lemon Juice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Lime juice",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Orange Juice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "High Heat Cooking Oil": [
+    [
+      "Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "High Heat Cooking Oil",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Seasoned Rice Vinegar": [
+    [
+      "Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Rice Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Seasoned Rice Vinegar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Napa Cabbage": [
+    [
+      "Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "White Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.76)"
+    ],
+    [
+      "Chinese Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.75)"
+    ],
+    [
+      "Red Cabbage",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Napa Cabbage",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Cilantro Leaves": [
+    [
+      "Cilantro",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Cilantro Leaves",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Silken Tofu": [
+    [
+      "Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Silken Tofu",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chinese Sesame Sauce": [
+    [
+      "Chinese Sesame Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Unsalted Beef Stock": [
+    [
+      "Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Unsalted Beef Stock",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Shaoxing Wine": [
+    [
+      "Shaoxing Wine",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Mung Bean Sprouts": [
+    [
+      "Bean Sprouts",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Mung Bean Sprouts",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chinese Long Beans": [
+    [
+      "Chinese Long Beans",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Chillies": [
+    [
+      "Chilli",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Red Chillies",
+      "Semantic Match with Dynamic Threshold 0.65 (Score: 0.93)"
+    ],
+    [
+      "Dried Chillies",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chicken Bouillon Powder": [
+    [
+      "Chicken Bouillon Powder",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Egg Roll Wrappers": [
+    [
+      "Egg Rolls",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.85)"
+    ],
+    [
+      "Egg Roll Wrappers",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Plum Sauce": [
+    [
+      "Plum Tomatoes",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.78)"
+    ],
+    [
+      "Plum Sauce",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Chilli Bean Paste": [
+    [
+      "Vanilla Bean Paste",
+      "Semantic Match with Dynamic Threshold 0.75 (Score: 0.79)"
+    ],
+    [
+      "Chilli Bean Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Snow Peas": [
+    [
+      "Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Frozen Peas",
+      "Semantic Match with Dynamic Threshold 0.80 (Score: 0.87)"
+    ],
+    [
+      "Snow Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pineapple Chunks": [
+    [
+      "Pineapple Chunks",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Pineapple Juice": [
+    [
+      "Pineapple Juice",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dried Shrimp": [
+    [
+      "Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Dried Shrimp",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Buckwheat Flour": [
+    [
+      "Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Buckwheat Flour",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Split Peas": [
+    [
+      "Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Yellow Split Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Split Peas",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Ground Sugar": [
+    [
+      "Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ],
+    [
+      "Ground Sugar",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Speculaas Spice Mix": [
+    [
+      "Speculaas Spice Mix",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Almond Paste": [
+    [
+      "Almond Paste",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ],
+  "Dutch Stroop": [
+    [
+      "Dutch Stroop",
+      "Substring & Head Match (Score: 1.00)"
+    ]
+  ]
+}

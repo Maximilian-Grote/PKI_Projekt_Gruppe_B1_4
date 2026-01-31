@@ -114,7 +114,7 @@ class TheMealDBClient:
                 # None-Werte abfangen und zur Rezept-Liste hinzufügen
                 recipes.extend(data.get("meals", []) or [])
                 logger.info(
-                    f" -- Found {len(recipes)} {ingredient}-recipes for ingredient '{ing}' (similarity: {score})"
+                    f" -- Found {len(recipes)} {ingredient}-recipes for ingredient '{ing}' ({score})"
                 )
 
             return recipes

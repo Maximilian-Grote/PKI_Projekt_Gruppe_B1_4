@@ -12,7 +12,7 @@
  [11. KI-Einsatz](#11-ki-einsatz)
 
 
-<!-- # 1. Rezept-Empfehlungssystem -->
+# 1. Rezept-Empfehlungssystem
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.
 

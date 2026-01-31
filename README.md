@@ -1,25 +1,17 @@
-<!-- TOC -->
+[1. Features](#1-features)  
+ [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)  
+ [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)  
+ [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)  
+ [5. Setup (kurz)](#5-setup-kurz)  
+    - [5.1. Zusätzliche Requirements für Cache-Generierung](#51-zusätzliche-requirements-für-cache-generierung)  
+ [6. Ausführen (Bash)](#6-ausführen-bash)  
+ [7. Projektstruktur](#7-projektstruktur)  
+ [8. API-Endpoints (Backend)](#8-api-endpoints-backend)  
+ [9. TheMealDB-API-Integration](#9-themealdb-api-integration)  
+ [10. Beiträge](#10-beiträge)  
+ [11. KI-Einsatz](#11-ki-einsatz)
 
-    - [1. Features](#1-features)
-    - [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
-    - [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
-    - [4. NLP/Ähnlichkeitslogik (Probleme & Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)
-    - [5. Setup (kurz)](#5-setup-kurz)
-        - [5.1. Zusätzliche Requirements für Cache-Generierung](#51-zusätzliche-requirements-für-cache-generierung)
-- [1. Features](#1-features)
-- [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
-- [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
-- [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)
-- [5. Setup (kurz)](#5-setup-kurz)
-  - [5.1. Zusätzliche Requirements für Cache-Generierung](#51-zusätzliche-requirements-für-cache-generierung)
-- [6. Ausführen (Bash)](#6-ausführen-bash)
-- [7. Projektstruktur](#7-projektstruktur)
-- [8. API-Endpoints (Backend)](#8-api-endpoints-backend)
-- [9. TheMealDB-API-Integration](#9-themealdb-api-integration)
-- [10. Beiträge](#10-beiträge)
-- [11. KI-Einsatz](#11-ki-einsatz)
 
-<!-- /TOC -->
 <!-- # 1. Rezept-Empfehlungssystem -->
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.

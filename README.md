@@ -1,23 +1,30 @@
-# Rezept-Empfehlungssystem<!-- TOC -->
+<!-- TOC -->
 
-- [Rezept-Empfehlungssystem](#rezept-empfehlungssystem)
-  - [Features](#features)
-  - [Ablauf (Kurzfassung)](#ablauf-kurzfassung)
-  - [Ablaufdiagramm (Mermaid)](#ablaufdiagramm-mermaid)
-  - [NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#nlpähnlichkeitslogik-probleme--lösungen)
-  - [Setup (kurz)](#setup-kurz)
-  - [Ausführen (Bash)](#ausführen-bash)
-  - [Projektstruktur](#projektstruktur)
-  - [API-Endpoints (Backend)](#api-endpoints-backend)
-  - [TheMealDB-API-Integration](#themealdb-api-integration)
-  - [Beiträge](#beiträge)
-  - [KI-Einsatz](#ki-einsatz)
+    - [1. Features](#1-features)
+    - [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
+    - [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
+    - [4. NLP/Ähnlichkeitslogik (Probleme & Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)
+    - [5. Setup (kurz)](#5-setup-kurz)
+        - [5.1. Zusätzliche Requirements für Cache-Generierung](#51-zusätzliche-requirements-für-cache-generierung)
+- [1. Features](#1-features)
+- [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
+- [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
+- [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)
+- [5. Setup (kurz)](#5-setup-kurz)
+  - [5.1. Zusätzliche Requirements für Cache-Generierung](#51-zusätzliche-requirements-für-cache-generierung)
+- [6. Ausführen (Bash)](#6-ausführen-bash)
+- [7. Projektstruktur](#7-projektstruktur)
+- [8. API-Endpoints (Backend)](#8-api-endpoints-backend)
+- [9. TheMealDB-API-Integration](#9-themealdb-api-integration)
+- [10. Beiträge](#10-beiträge)
+- [11. KI-Einsatz](#11-ki-einsatz)
 
 <!-- /TOC -->
+<!-- # 1. Rezept-Empfehlungssystem -->
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.
 
-## Features
+## 1. Features
 
 ✅ **Zutatenwahl-Interface**
 - Alle Zutaten von TheMealDB laden
@@ -39,7 +46,7 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 - Zusammenführen ähnlicher Zutaten (z. B. „Beef“ vs. „Beef Fillet“)
 - Vermeidet zu restriktive Schnittmengen
 
-## Ablauf (Kurzfassung)
+## 2. Ablauf (Kurzfassung)
 
 1. **Start**: App lädt Zutatenliste aus TheMealDB.
 2. **Zutatenwahl**: Nutzer wählt Zutaten über UI oder Suche.
@@ -47,7 +54,7 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 4. **Rezeptsuche**: Rezepte werden per Schnittmenge ermittelt.
 5. **Detailansicht**: Zutaten + Anleitung; ähnliche Rezepte werden empfohlen.
 
-## Ablaufdiagramm (Mermaid)
+## 3. Ablaufdiagramm (Mermaid)
 
 ```mermaid
 flowchart TD
@@ -60,10 +67,10 @@ flowchart TD
   G --> H[Ähnliche Rezepte berechnen]
 ```
 
-## NLP/Ähnlichkeitslogik (Probleme & Lösungen)
+## 4. NLP/Ähnlichkeitslogik (Probleme & Lösungen)
 
 **Probleme:**
-- Unterschiedliche Schreibweisen (z. B. „Beef“, „Beef Fillet“)
+- Unterschiedliche Schreibweisen (z. B. "Basil", "Basil Leaves")
 - Synonyme/Varianten verhindern Treffer in der Schnittmenge
 - API liefert teils ähnliche Zutaten als separate Einträge
 
@@ -76,7 +83,8 @@ flowchart TD
 - Der Ähnlichkeitsindex wird im Notebook erstellt: [rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)
 
 
-## Setup (kurz)
+
+## 5. Setup (kurz)
 
 ```bash
 python3.9 -m venv .venvRezept
@@ -84,7 +92,37 @@ source .venvRezept/Scripts/activate
 pip install -r requirements.txt
 ```
 
-## Ausführen (Bash)
+**Hinweis zu Abhängigkeiten:**
+
+- Für den normalen Produktivbetrieb (Web-App, Rezepte suchen, Zutatenwahl etc.) reicht die Installation von `requirements.txt`.
+- **Für die Erstellung oder Aktualisierung des Zutaten-Ähnlichkeits-Cache (JSON) via Notebook `createIndexForSimilarIngredients.ipynb` gibt es eine separate requirements-Datei:**
+  - `requirements-nlp-cache.txt` (enthält alle nötigen NLP-Bibliotheken)
+
+Diese Pakete sind **nicht** in der Standard-`requirements.txt` enthalten, da sie nur für die einmalige Generierung des Caches gebraucht werden.
+
+### 5.1. Zusätzliche Requirements für Cache-Generierung
+
+Falls der Zutaten-Ähnlichkeits-Cache (`ingredient_similarity_cache_*.json`) neu erstellt werden soll:
+
+```bash
+# (Im aktivierten venv)
+pip install -r requirements-nlp-cache.txt
+```
+
+Danach kann das Notebook `createIndexForSimilarIngredients.ipynb` ausgeführt werden, um die JSON-Datei zu erzeugen.
+
+Hinweis: Die spaCy-Modelle (`en_core_web_md`, `en_core_web_trf`) sind in `requirements-nlp-cache.txt` als direkte Wheels enthalten. Falls die Installation der Modelle fehlschlägt, kann man sie manuell nachinstallieren:
+
+```bash
+python -m spacy download en_core_web_md
+python -m spacy download en_core_web_trf
+```
+
+Wenn nach der Installation die Meldung erscheint „You can now load the package via spacy.load('en_core_web_md')“, ist das **korrekt** – das Modell ist erfolgreich installiert und kann direkt in `spacy.load(...)` verwendet werden.
+
+**Im Produktivbetrieb werden diese Pakete nicht benötigt!**
+
+## 6. Ausführen (Bash)
 
 ```bash
 cd rezept-empfehlungssystem
@@ -93,7 +131,7 @@ python app.py
 Die Anwendung läuft unter: `http://localhost:5000`
 
 
-## Projektstruktur
+## 7. Projektstruktur
 
 ```
 rezept-empfehlungssystem/
@@ -110,7 +148,7 @@ rezept-empfehlungssystem/
     └── style.css
 ```
 
-## API-Endpoints (Backend)
+## 8. API-Endpoints (Backend)
 
 | Endpoint | Methode | Beschreibung |
 |----------|---------|-------------|
@@ -118,7 +156,7 @@ rezept-empfehlungssystem/
 | `/recipes` | GET | Rezepte-Ergebnisseite |
 | `/recipe/<meal_id>` | GET | Detailseite für ein Rezept |
 
-## TheMealDB-API-Integration
+## 9. TheMealDB-API-Integration
 
 - **Quelle**: https://www.themealdb.com/api.php
 - **Endpoints genutzt**:
@@ -127,7 +165,7 @@ rezept-empfehlungssystem/
   - `GET /lookup.php?i={meal_id}` – Rezept-Details
 - **Zutatenbilder**: `https://www.themealdb.com/images/ingredients/{name}.png`
 
-## Beiträge
+## 10. Beiträge
 
 **Grundgerüst:**
 - Gemeinsam mit KI-Unterstützung erstellt
@@ -143,6 +181,6 @@ rezept-empfehlungssystem/
 - Empfehlungslogik basierend auf ausgewähltem Rezept (TF-IDF) (`recommend_similar_recipes`)
 
 
-## KI-Einsatz
+## 11. KI-Einsatz
 
 Für Teile der Ideenfindung, Code-Überarbeitung und Dokumentation wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen, README-Erstellung).

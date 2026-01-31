@@ -1,5 +1,5 @@
 /**
- * Zutaten-Suche mit Vorschlägen, Checkbox-Handling und Tags
+ * Ingredient search with suggestions, checkbox handling, and tags
  */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const selected = checkboxes.filter(cb => cb.checked).map(cb => cb.value);
 
         if (selected.length === 0) {
-            tagsContainer.innerHTML = '<p class="empty-state">Noch keine Zutaten gewählt</p>';
+            tagsContainer.innerHTML = '<p class="empty-state">No ingredients selected yet</p>';
             searchBtn.disabled = true;
-            searchBtn.textContent = 'Rezepte suchen';
+            searchBtn.textContent = 'Search recipes';
             return;
         }
 
@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 return '<span class="tag">' +
                     '<img src="' + imageUrl + '" alt="' + name + '" class="tag-image" onerror="this.src=' + "'" + "{{ url_for('static', filename='placeholder.svg') }}" + "'" + '">' +
                     '<span class="tag-text">' + name + '</span>' +
-                    '<button type="button" class="tag-remove" data-ingredient="' + name + '" aria-label="' + name + ' entfernen">×</button>' +
+                    '<button type="button" class="tag-remove" data-ingredient="' + name + '" aria-label="Remove ' + name + '">×</button>' +
                     '</span>';
             })
             .join('');
 
         searchBtn.disabled = false;
-        searchBtn.textContent = 'Rezepte suchen (' + selected.length + ')';
+        searchBtn.textContent = 'Search recipes (' + selected.length + ')';
 
         // Event-Listener für Remove-Buttons hinzufügen
         tagsContainer.querySelectorAll('.tag-remove').forEach(btn => {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (!matches || matches.length === 0) {
-            suggestions.innerHTML = '<div class="suggestion-item no-matches">Keine Treffer</div>';
+            suggestions.innerHTML = '<div class="suggestion-item no-matches">No matches</div>';
             suggestions.style.display = 'block';
             return;
         }

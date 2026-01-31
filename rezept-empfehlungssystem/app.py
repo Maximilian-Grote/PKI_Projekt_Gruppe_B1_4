@@ -346,7 +346,7 @@ def recipes_page():
             "recipes.html",
             recipes=[],
             selected_ingredients=[],
-            error="Bitte wähle mindestens eine Zutat aus.",
+            error="Please select at least one ingredient.",
         )
 
     recipes_list = get_recipes_for_ingredients(selected_ingredients)

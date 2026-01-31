@@ -3,7 +3,7 @@
 - [1. Features](#1-features)
 - [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
 - [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
-- [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)
+- [4. NLP/Ähnlichkeitslogik (Vorverarbeitung)](#4-nlpähnlichkeitslogik-vorverarbeitung)
 - [5. Rezeptempfehlungslogik](#5-rezeptempfehlungslogik)
 - [6. Setup (kurz)](#6-setup-kurz)
   - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)
@@ -15,12 +15,12 @@
 - [12. KI-Einsatz](#12-ki-einsatz)
 
 
-# 1. Rezept-Empfehlungssystem
+# Rezept-Empfehlungssystem
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.
 
 
-## 3. Features
+## 1. Features
 
 ✅ **Zutatenwahl-Interface**
 - Alle Zutaten von TheMealDB laden
@@ -43,7 +43,7 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 - Basierend auf Zutatenprofilen und TF-IDF-Ähnlichkeit
 - Verbesserte Entdeckung neuer Rezepte
 
-## 4. Ablauf (Kurzfassung)
+## 2. Ablauf (Kurzfassung)
 
 1. **Start**: App lädt Zutatenliste aus TheMealDB.
 2. **Zutatenwahl**: Nutzer wählt Zutaten über UI oder Suche.
@@ -51,28 +51,7 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 4. **Rezeptsuche**: Rezepte werden per Schnittmenge ermittelt.
 5. **Detailansicht**: Zutaten + Anleitung; ähnliche Rezepte werden empfohlen.
 
-## 2. NLP-basierte Ähnlichkeitsmatrix (Vorverarbeitung)
-
-**Wichtig**: Die Zutaten-Ähnlichkeitslogik ist **keine Produktivlogik** im Flask-Server. Stattdessen wird sie als Vorverarbeitungsschritt ausgeführt:
-
-**Problem:**
-- Unterschiedliche Schreibweisen (z. B. "Basil", "Basil Leaves")
-- Synonyme/Varianten verhindern Treffer in der Schnittmenge
-- API liefert teils ähnliche Zutaten als separate Einträge
-
-**Lösung:**
-1. **Im Notebook** ([`createIndexForSimilarIngredients.ipynb`](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)): Eine Ähnlichkeitsmatrix wird separat berechnet
-2. **NLP-Verfahren**: 
-   - Semantische Ähnlichkeit (SentenceTransformer-Embeddings)
-   - String-Ähnlichkeit (Levenshtein-Distanz)
-   - Grammatikalische Analyse (spaCy Head-Noun-Extraction)
-   - Normalisierung von Strings (Kleinschreibung + Akzente entfernen)
-3. **Resultat**: JSON-Cache `ingredient_similarity_cache_*.json` mit Zuordnungen ähnlicher Zutaten
-4. **Anwendung**: Die JSON-Datei wird vom Server geladen und zur Deduplication während der Rezeptsuche verwendet
-
-Dieses Vorgehen ermöglicht schnelle Lookups ohne rechenintensive NLP-Operationen zur Laufzeit.
-
-## 5. Ablaufdiagramm (Mermaid)
+## 3. Ablaufdiagramm (Mermaid)
 
 ```mermaid
 flowchart TD
@@ -84,8 +63,9 @@ flowchart TD
   F --> G[Rezept-Detail öffnen]
   G --> H[Ähnliche Rezepte berechnen]
 ```
+## 4. NLP/Ähnlichkeitslogik (Vorverarbeitung)
 
-## 4. NLP/Ähnlichkeitslogik (Probleme & Lösungen)
+**Wichtig**: Die Zutaten-Ähnlichkeitslogik ist **keine Produktivlogik** im Flask-Server. Stattdessen wird sie als Vorverarbeitungsschritt ausgeführt:
 
 **Probleme:**
 - Unterschiedliche Schreibweisen (z. B. "Basil", "Basil Leaves")
@@ -93,14 +73,16 @@ flowchart TD
 - API liefert teils ähnliche Zutaten als separate Einträge
 
 **Lösungen im Projekt:**
-- Ähnlichkeits-Cache für Zutaten (vorberechnet)
-- Dedup-Logik, die ähnliche Zutaten in der Auswahl zusammenführt
-- Normalisierung von Strings (klein + Akzente entfernen)
+1. **Im Notebook** ([rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)): Die Ähnlichkeitsmatrix wird separat berechnet
+2. **NLP-Verfahren**:
+   - Semantische Ähnlichkeit (SentenceTransformer-Embeddings)
+   - String-Ähnlichkeit (Levenshtein-Distanz)
+   - Grammatikalische Analyse (spaCy Head-Noun-Extraction)
+   - Normalisierung von Strings (Kleinschreibung + Akzente entfernen)
+3. **Resultat**: JSON-Cache `ingredient_similarity_cache_*.json` mit Zuordnungen ähnlicher Zutaten
+4. **Anwendung**: Die JSON-Datei wird vom Server geladen und zur Deduplication während der Rezeptsuche verwendet
 
-**Notebook:**
-- Der Ähnlichkeitsindex wird im Notebook erstellt: [rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)
-
-
+Dieses Vorgehen ermöglicht schnelle Lookups ohne rechenintensive NLP-Operationen zur Laufzeit.
 
 ## 5. Rezeptempfehlungslogik
 
@@ -153,7 +135,6 @@ Wenn nach der Installation die Meldung erscheint „You can now load the package
 **Im Produktivbetrieb werden diese Pakete nicht benötigt!**
 
 ## 7. Ausführen (Bash)
-## 7. Ausführen (Bash)
 
 ```bash
 cd rezept-empfehlungssystem
@@ -162,7 +143,6 @@ python app.py
 Die Anwendung läuft unter: `http://localhost:5000`
 
 
-## 8. Projektstruktur
 ## 8. Projektstruktur
 
 ```
@@ -181,7 +161,6 @@ rezept-empfehlungssystem/
 ```
 
 ## 9. API-Endpoints (Backend)
-## 9. API-Endpoints (Backend)
 
 | Endpoint | Methode | Beschreibung |
 |----------|---------|-------------|
@@ -189,7 +168,6 @@ rezept-empfehlungssystem/
 | `/recipes` | GET | Rezepte-Ergebnisseite |
 | `/recipe/<meal_id>` | GET | Detailseite für ein Rezept |
 
-## 10. TheMealDB-API-Integration
 ## 10. TheMealDB-API-Integration
 
 - **Quelle**: https://www.themealdb.com/api.php
@@ -199,7 +177,6 @@ rezept-empfehlungssystem/
   - `GET /lookup.php?i={meal_id}` – Rezept-Details
 - **Zutatenbilder**: `https://www.themealdb.com/images/ingredients/{name}.png`
 
-## 11. Beiträge
 ## 11. Beiträge
 
 **Grundgerüst:**
@@ -216,7 +193,6 @@ rezept-empfehlungssystem/
 - Empfehlungslogik basierend auf ausgewähltem Rezept (TF-IDF) (`recommend_similar_recipes`)
 
 
-## 12. KI-Einsatz
 ## 12. KI-Einsatz
 
 Für Teile der Ideenfindung, Code-Überarbeitung und Dokumentation wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen, README-Erstellung).

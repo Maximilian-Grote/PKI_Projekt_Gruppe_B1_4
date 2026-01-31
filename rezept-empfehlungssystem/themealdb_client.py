@@ -12,7 +12,8 @@ import requests
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.themealdb.com/api/json/v1/1"
-SIMILARITY_CACHE_PATH = "ingredient_similarity_cache_30-01-2026-15-48_max.json"
+
+SIMILARITY_CACHE_DIR = "used_similarity_cache"
 
 
 class TheMealDBClient:
@@ -23,21 +24,31 @@ class TheMealDBClient:
         self._ingredients_cache = None
         self._recipe_details_cache = {}
         self._similarity_cache = None
+        self.load_similarity_cache()
 
     def load_similarity_cache(self) -> Dict:
-        """Lädt die global definierte JSON-Datei und gibt ein Dict zurück."""
+        """Lädt die erste JSON-Datei aus dem used_similarity_cache Ordner."""
         if self._similarity_cache is not None:
             return self._similarity_cache
 
         try:
-            file_path = Path(__file__).resolve().parent / SIMILARITY_CACHE_PATH
+            cache_dir = Path(__file__).resolve().parent / SIMILARITY_CACHE_DIR
+            json_files = list(cache_dir.glob("*.json"))
+            
+            if not json_files:
+                logger.warning("No JSON files found in %s", cache_dir)
+                self._similarity_cache = {}
+                return self._similarity_cache
+            
+            file_path = sorted(json_files)[0]
             with file_path.open("r", encoding="utf-8") as file:
                 self._similarity_cache = json.load(file)
             logger.info("Loaded similarity cache from %s", file_path)
             return self._similarity_cache
         except (OSError, json.JSONDecodeError) as exc:
             logger.error("Error loading similarity cache: %s", exc)
-            return {}
+            self._similarity_cache = {}
+            return self._similarity_cache
 
     def get_all_ingredients(self) -> List[Dict]:
         """Alle verfügbaren Zutaten laden, angereichert mit Bild-URLs"""

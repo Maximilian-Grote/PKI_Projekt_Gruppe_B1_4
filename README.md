@@ -2,14 +2,15 @@
  [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)  
  [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)  
  [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)  
- [5. Setup (kurz)](#5-setup-kurz)  
-    - [5.1. Zusätzliche Requirements für Cache-Generierung](#51-zusätzliche-requirements-für-cache-generierung)  
- [6. Ausführen (Bash)](#6-ausführen-bash)  
- [7. Projektstruktur](#7-projektstruktur)  
- [8. API-Endpoints (Backend)](#8-api-endpoints-backend)  
- [9. TheMealDB-API-Integration](#9-themealdb-api-integration)  
- [10. Beiträge](#10-beiträge)  
- [11. KI-Einsatz](#11-ki-einsatz)
+ [5. Rezeptempfehlungslogik (kurz)](#5-rezeptempfehlungslogik-kurz)  
+ [6. Setup (kurz)](#6-setup-kurz)  
+   - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)  
+ [7. Ausführen (Bash)](#7-ausführen-bash)  
+ [8. Projektstruktur](#8-projektstruktur)  
+ [9. API-Endpoints (Backend)](#9-api-endpoints-backend)  
+ [10. TheMealDB-API-Integration](#10-themealdb-api-integration)  
+ [11. Beiträge](#11-beiträge)  
+ [12. KI-Einsatz](#12-ki-einsatz)
 
 
 # 1. Rezept-Empfehlungssystem
@@ -76,7 +77,19 @@ flowchart TD
 
 
 
-## 5. Setup (kurz)
+## 5. Rezeptempfehlungslogik
+
+**Ablauf:**
+- Ausgangspunkt ist das aktuell geöffnete Rezept.
+- Aus der Zutatenliste wird ein TF‑IDF‑Vektor gebildet.
+- Alle anderen Rezepte werden ebenfalls als TF‑IDF‑Vektoren dargestellt.
+- Vergleich per Ähnlichkeitsmaß (Kosinus‑Ähnlichkeit) mit dem Ausgangsrezept.
+- Die Top‑Treffer mit der höchsten Ähnlichkeit werden als „ähnliche Rezepte“ angezeigt.
+
+**Ergebnis:**
+- Empfehlungen mit möglichst vielen gemeinsamen Zutaten bzw. ähnlichen Zutatenkombinationen, ohne zu strikte Filterung.
+
+## 6. Setup (kurz)
 
 ```bash
 python3.9 -m venv .venvRezept
@@ -92,7 +105,7 @@ pip install -r requirements.txt
 
 Diese Pakete sind **nicht** in der Standard-`requirements.txt` enthalten, da sie nur für die einmalige Generierung des Caches gebraucht werden.
 
-### 5.1. Zusätzliche Requirements für Cache-Generierung
+### 6.1. Zusätzliche Requirements für Cache-Generierung
 
 Falls der Zutaten-Ähnlichkeits-Cache (`ingredient_similarity_cache_*.json`) neu erstellt werden soll:
 
@@ -114,7 +127,7 @@ Wenn nach der Installation die Meldung erscheint „You can now load the package
 
 **Im Produktivbetrieb werden diese Pakete nicht benötigt!**
 
-## 6. Ausführen (Bash)
+## 7. Ausführen (Bash)
 
 ```bash
 cd rezept-empfehlungssystem
@@ -123,7 +136,7 @@ python app.py
 Die Anwendung läuft unter: `http://localhost:5000`
 
 
-## 7. Projektstruktur
+## 8. Projektstruktur
 
 ```
 rezept-empfehlungssystem/
@@ -140,7 +153,7 @@ rezept-empfehlungssystem/
     └── style.css
 ```
 
-## 8. API-Endpoints (Backend)
+## 9. API-Endpoints (Backend)
 
 | Endpoint | Methode | Beschreibung |
 |----------|---------|-------------|
@@ -148,7 +161,7 @@ rezept-empfehlungssystem/
 | `/recipes` | GET | Rezepte-Ergebnisseite |
 | `/recipe/<meal_id>` | GET | Detailseite für ein Rezept |
 
-## 9. TheMealDB-API-Integration
+## 10. TheMealDB-API-Integration
 
 - **Quelle**: https://www.themealdb.com/api.php
 - **Endpoints genutzt**:
@@ -157,7 +170,7 @@ rezept-empfehlungssystem/
   - `GET /lookup.php?i={meal_id}` – Rezept-Details
 - **Zutatenbilder**: `https://www.themealdb.com/images/ingredients/{name}.png`
 
-## 10. Beiträge
+## 11. Beiträge
 
 **Grundgerüst:**
 - Gemeinsam mit KI-Unterstützung erstellt
@@ -173,6 +186,6 @@ rezept-empfehlungssystem/
 - Empfehlungslogik basierend auf ausgewähltem Rezept (TF-IDF) (`recommend_similar_recipes`)
 
 
-## 11. KI-Einsatz
+## 12. KI-Einsatz
 
 Für Teile der Ideenfindung, Code-Überarbeitung und Dokumentation wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen, README-Erstellung).

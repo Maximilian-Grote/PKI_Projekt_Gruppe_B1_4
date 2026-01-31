@@ -1,18 +1,19 @@
 ## Inhaltsverzeichnis
 
-- [1. Features](#1-features)
-- [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
-- [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
-- [4. NLP/Ähnlichkeitslogik (Vorverarbeitung)](#4-nlpähnlichkeitslogik-vorverarbeitung)
-- [5. Rezeptempfehlungslogik](#5-rezeptempfehlungslogik)
-- [6. Setup (kurz)](#6-setup-kurz)
-  - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)
-- [7. Ausführen (Bash)](#7-ausführen-bash)
-- [8. Projektstruktur](#8-projektstruktur)
-- [9. API-Endpoints (Backend)](#9-api-endpoints-backend)
-- [10. TheMealDB-API-Integration](#10-themealdb-api-integration)
-- [11. Beiträge](#11-beiträge)
-- [12. KI-Einsatz](#12-ki-einsatz)
+- [Rezept-Empfehlungssystem](#rezept-empfehlungssystem)
+  - [1. Features](#1-features)
+  - [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
+  - [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
+  - [4. NLP/Ähnlichkeitslogik (Vorverarbeitung)](#4-nlpähnlichkeitslogik-vorverarbeitung)
+  - [5. Rezeptempfehlungslogik](#5-rezeptempfehlungslogik)
+  - [6. Setup (kurz)](#6-setup-kurz)
+    - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)
+  - [7. Ausführen (Bash)](#7-ausführen-bash)
+  - [8. Projektstruktur](#8-projektstruktur)
+  - [9. API-Endpoints (Backend)](#9-api-endpoints-backend)
+  - [10. TheMealDB-API-Integration](#10-themealdb-api-integration)
+  - [11. Beiträge](#11-beiträge)
+  - [12. KI-Einsatz](#12-ki-einsatz)
 
 
 # Rezept-Empfehlungssystem
@@ -63,7 +64,8 @@ flowchart TD
   F --> G[Rezept-Detail öffnen]
   G --> H[Ähnliche Rezepte berechnen]
 ```
-## 4. NLP/Ähnlichkeitslogik (Vorverarbeitung)
+## 4. NLP/Ähnlichkeitslogik (Vorverarbeitung) 
+*Maximilian Grote*
 
 **Wichtig**: Die Zutaten-Ähnlichkeitslogik ist **keine Produktivlogik** im Flask-Server. Stattdessen wird sie als Vorverarbeitungsschritt ausgeführt:
 
@@ -85,6 +87,7 @@ flowchart TD
 Dieses Vorgehen ermöglicht schnelle Lookups ohne rechenintensive NLP-Operationen zur Laufzeit.
 
 ## 5. Rezeptempfehlungslogik
+*Julien Maximilian Wache*    
 
 **Ablauf:**
 - Ausgangspunkt ist das aktuell geöffnete Rezept.
@@ -185,7 +188,7 @@ rezept-empfehlungssystem/
 **Maximilian Grote:**
 - Zutaten-Normalisierung mit NLP
 - Erweiterung `TheMealDBClient` (z. B. `search_recipes_by_ingredient`)
-- Ähnlichkeits-Cache-Integration
+- Ähnlicshkeit-Cache-Integration
 
 **Julien Maximilian Wache:**
 - Rezept-Detail-Funktion (`get_recipe_details`)

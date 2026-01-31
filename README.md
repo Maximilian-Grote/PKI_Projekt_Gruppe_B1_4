@@ -1,16 +1,18 @@
-[1. Features](#1-features)  
- [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)  
- [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)  
- [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)  
- [5. Rezeptempfehlungslogik (kurz)](#5-rezeptempfehlungslogik-kurz)  
- [6. Setup (kurz)](#6-setup-kurz)  
-   - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)  
- [7. Ausführen (Bash)](#7-ausführen-bash)  
- [8. Projektstruktur](#8-projektstruktur)  
- [9. API-Endpoints (Backend)](#9-api-endpoints-backend)  
- [10. TheMealDB-API-Integration](#10-themealdb-api-integration)  
- [11. Beiträge](#11-beiträge)  
- [12. KI-Einsatz](#12-ki-einsatz)
+## Inhaltsverzeichnis
+
+- [1. Features](#1-features)
+- [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
+- [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
+- [4. NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#4-nlpähnlichkeitslogik-probleme--lösungen)
+- [5. Rezeptempfehlungslogik](#5-rezeptempfehlungslogik)
+- [6. Setup (kurz)](#6-setup-kurz)
+  - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)
+- [7. Ausführen (Bash)](#7-ausführen-bash)
+- [8. Projektstruktur](#8-projektstruktur)
+- [9. API-Endpoints (Backend)](#9-api-endpoints-backend)
+- [10. TheMealDB-API-Integration](#10-themealdb-api-integration)
+- [11. Beiträge](#11-beiträge)
+- [12. KI-Einsatz](#12-ki-einsatz)
 
 
 # 1. Rezept-Empfehlungssystem

@@ -1,4 +1,4 @@
-# Rezept-Empfehlungssystem - MVP
+# Rezept-Empfehlungssystem (MVP)
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.
 
@@ -7,49 +7,60 @@ Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreu
 ✅ **Zutatenwahl-Interface**
 - Alle Zutaten von TheMealDB laden
 - Kachel-Layout mit Zutatenbildern
-- Suchfeld mit Auto-Komplettierung
+- Suchfeld mit Auto-Completion
 - Gewählte Zutaten als Tags anzeigen
 
 ✅ **Rezept-Suche**
 - Rezepte nach gewählten Zutaten suchen
 - Rezeptkarten mit Bildern anzeigen
-- Detailansicht mit Zutaten + Anleitung (Modal)
+- Detailansicht mit Zutaten + Anleitung
 
 ✅ **TheMealDB-Integration**
 - Kostenlose API ohne Authentifizierung
 - Caching zur Rate-Limit-Vermeidung
 - RESTful API-Wrapper
 
-## Setup
+✅ **Ähnlichkeits-Logik für Zutaten (NLP-light)**
+- Zusammenführen ähnlicher Zutaten (z. B. „Beef“ vs. „Beef Fillet“)
+- Vermeidet zu restriktive Schnittmengen
 
-### 1. Installation
+## Ablauf (Kurzfassung)
 
-Um eine alte virtuelle Umgebung zu löschen, führe die folgenden Schritte aus:
+1. **Start**: App lädt Zutatenliste aus TheMealDB.
+2. **Zutatenwahl**: Nutzer wählt Zutaten über UI oder Suche.
+3. **Dedup**: Ähnliche Zutaten werden zusammengeführt.
+4. **Rezeptsuche**: Rezepte werden per Schnittmenge ermittelt.
+5. **Detailansicht**: Zutaten + Anleitung; ähnliche Rezepte werden empfohlen.
 
-Deaktiviere die virtuelle Umgebung, falls sie aktiv ist:
-   ```bash
-   deactivate
-   ```
-Lösche des alten Ordner der virtuellen Umgebung .venv:
-   ```bash
-   rm -rf .venv
-   ```
-Um die benötigten Pakete in einer virtuellen Umgebung zu installieren, führe die folgenden Schritte aus:
-   
-Erstelle eine neue virtuelle Umgebung manche Bibliotheken funktionieren nur mit Python 3.9.x :
-   ```bash
-   python3.9 -m venv .venvRezept
-   ```
-venv Umgebung activieren:
-   ```bash
-   source .venvRezept/Scripts/activate
-   ```
-Packages neu installieren:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Ablaufdiagramm (Mermaid)
 
-### 2. Starten
+```mermaid
+flowchart TD
+  A[Startseite öffnen] --> B[Zutatenliste laden]
+  B --> C[Zutaten wählen]
+  C --> D[Ähnliche Zutaten deduplizieren]
+  D --> E[Rezepte per Schnittmenge suchen]
+  E --> F[Rezepte anzeigen]
+  F --> G[Rezept-Detail öffnen]
+  G --> H[Ähnliche Rezepte berechnen]
+```
+
+## NLP/Ähnlichkeitslogik (Probleme & Lösungen)
+
+**Probleme:**
+- Unterschiedliche Schreibweisen (z. B. „Beef“, „Beef Fillet“)
+- Synonyme/Varianten verhindern Treffer in der Schnittmenge
+- API liefert teils ähnliche Zutaten als separate Einträge
+
+**Lösungen im Projekt:**
+- Ähnlichkeits-Cache für Zutaten (vorberechnet)
+- Dedup-Logik, die ähnliche Zutaten in der Auswahl zusammenführt
+- Normalisierung von Strings (klein + Akzente entfernen)
+
+**Notebook:**
+- Der Ähnlichkeitsindex wird im Notebook erstellt: [rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)
+
+## Ausführen (Bash)
 
 ```bash
 cd rezept-empfehlungssystem
@@ -58,33 +69,38 @@ python app.py
 
 Die Anwendung läuft unter: `http://localhost:5000`
 
+## Setup (kurz)
+
+```bash
+python3.9 -m venv .venvRezept
+source .venvRezept/Scripts/activate
+pip install -r requirements.txt
+```
+
 ## Projektstruktur
 
 ```
 rezept-empfehlungssystem/
-├── app.py                    # Flask-Anwendung (Haupteinstiegspunkt)
-├── themealdb_client.py       # TheMealDB-API-Wrapper
-├── requirements.txt          # Python-Dependencies
+├── app.py                              # Flask-Anwendung
+├── themealdb_client.py                 # TheMealDB-API-Wrapper
+├── createIndexForSimilarIngredients.ipynb
+├── ingredient_similarity_cache_*.json  # Ähnlichkeits-Cache
 ├── templates/
-│   ├── index.html           # Zutatenwahl-Seite
-│   └── recipes.html         # Rezept-Ergebnisseite
+│   ├── index.html
+│   ├── recipes.html
+│   └── recipe_detail.html
 └── static/
-    ├── app.js               # Zutatenwahl-Logik
-    ├── recipes.js           # Rezept-Logik
-    └── style.css            # Styling
+    ├── ingredients-search.js
+    └── style.css
 ```
 
-## API-Endpoints
-
-### Backend-API
+## API-Endpoints (Backend)
 
 | Endpoint | Methode | Beschreibung |
 |----------|---------|-------------|
 | `/` | GET | Startseite (Zutatenwahl) |
-| `/api/ingredients` | GET | Alle verfügbaren Zutaten |
-| `/api/recipes` | GET | Rezepte für Zutaten (Query: `?ingredients=Chicken,Garlic`) |
-| `/api/recipe/<meal_id>` | GET | Details eines Rezepts |
 | `/recipes` | GET | Rezepte-Ergebnisseite |
+| `/recipe/<meal_id>` | GET | Detailseite für ein Rezept |
 
 ## TheMealDB-API-Integration
 
@@ -95,22 +111,18 @@ rezept-empfehlungssystem/
   - `GET /lookup.php?i={meal_id}` – Rezept-Details
 - **Zutatenbilder**: `https://www.themealdb.com/images/ingredients/{name}.png`
 
-## Workflow
+## Beiträge (Git)
 
-1. **Benutzer startet Anwendung**
-   - Frontend lädt alle Zutaten von `/api/ingredients`
-   - Zutaten als Kacheln mit Bildern rendern
+**Autoren laut Git-Historie:**
+- MaximilianG (2 E-Mail-Varianten)
+- Julien Maximilian Wache
+- Julien
+- MaximalMaxi
 
-2. **Benutzer wählt Zutaten**
-   - Klick auf Zutat togglet Auswahl
-   - Ausgewählte Zutaten als Tags oben anzeigen
-   - Such-Button aktiviert sich
+**Zuordnung der Funktionen (bitte ergänzen):**
+- Person A: ________________
+- Person B: ________________
 
-3. **Benutzer klickt "Rezepte suchen"**
-   - Navigation zu `/recipes?ingredients=Chicken,Garlic`
-   - Frontend fetcht `/api/recipes?ingredients=Chicken,Garlic`
+## KI-Einsatz
 
-4. **Rezepte anzeigen**
-   - Rezept-Karten mit Bildern rendern
-   - Klick auf Rezept → Modal mit Details
-   - Modal zeigt: Bild, Zutaten, Anleitungstext
+Für Teile der Ideenfindung und Code-Überarbeitung wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen).

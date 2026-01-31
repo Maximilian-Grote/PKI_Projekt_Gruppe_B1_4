@@ -1,4 +1,19 @@
-# Rezept-Empfehlungssystem (MVP)
+# Rezept-Empfehlungssystem<!-- TOC -->
+
+- [Rezept-Empfehlungssystem](#rezept-empfehlungssystem)
+  - [Features](#features)
+  - [Ablauf (Kurzfassung)](#ablauf-kurzfassung)
+  - [Ablaufdiagramm (Mermaid)](#ablaufdiagramm-mermaid)
+  - [NLP/Ähnlichkeitslogik (Probleme \& Lösungen)](#nlpähnlichkeitslogik-probleme--lösungen)
+  - [Setup (kurz)](#setup-kurz)
+  - [Ausführen (Bash)](#ausführen-bash)
+  - [Projektstruktur](#projektstruktur)
+  - [API-Endpoints (Backend)](#api-endpoints-backend)
+  - [TheMealDB-API-Integration](#themealdb-api-integration)
+  - [Beiträge](#beiträge)
+  - [KI-Einsatz](#ki-einsatz)
+
+<!-- /TOC -->
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.
 
@@ -60,14 +75,6 @@ flowchart TD
 **Notebook:**
 - Der Ähnlichkeitsindex wird im Notebook erstellt: [rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)
 
-## Ausführen (Bash)
-
-```bash
-cd rezept-empfehlungssystem
-python app.py
-```
-
-Die Anwendung läuft unter: `http://localhost:5000`
 
 ## Setup (kurz)
 
@@ -76,6 +83,15 @@ python3.9 -m venv .venvRezept
 source .venvRezept/Scripts/activate
 pip install -r requirements.txt
 ```
+
+## Ausführen (Bash)
+
+```bash
+cd rezept-empfehlungssystem
+python app.py
+```
+Die Anwendung läuft unter: `http://localhost:5000`
+
 
 ## Projektstruktur
 
@@ -111,18 +127,22 @@ rezept-empfehlungssystem/
   - `GET /lookup.php?i={meal_id}` – Rezept-Details
 - **Zutatenbilder**: `https://www.themealdb.com/images/ingredients/{name}.png`
 
-## Beiträge (Git)
+## Beiträge
 
-**Autoren laut Git-Historie:**
-- MaximilianG (2 E-Mail-Varianten)
-- Julien Maximilian Wache
-- Julien
-- MaximalMaxi
+**Grundgerüst:**
+- Gemeinsam mit KI-Unterstützung erstellt
 
-**Zuordnung der Funktionen (bitte ergänzen):**
-- Person A: ________________
-- Person B: ________________
+**Maximilian Grote:**
+- Zutaten-Normalisierung mit NLP
+- Erweiterung `TheMealDBClient` (z. B. `search_recipes_by_ingredient`)
+- Ähnlichkeits-Cache-Integration
+
+**Julien Maximilian Wache:**
+- Rezept-Detail-Funktion (`get_recipe_details`)
+  - Rezept-Anzeige (Frontend + Backend)(`score_ingredient`)
+- Empfehlungslogik basierend auf ausgewähltem Rezept (TF-IDF) (`recommend_similar_recipes`)
+
 
 ## KI-Einsatz
 
-Für Teile der Ideenfindung und Code-Überarbeitung wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen).
+Für Teile der Ideenfindung, Code-Überarbeitung und Dokumentation wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen, README-Erstellung).

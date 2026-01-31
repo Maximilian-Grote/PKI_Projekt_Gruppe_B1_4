@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezept-Empfehlungssystem - Zutatenwahl</title>
+    <title>Recipe Recommendation System - Ingredient Selection</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Rezept-Empfehlungssystem</a></h1>
-            <p>Wähle Zutaten aus und finde passende Rezepte</p>
+            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Recipe Recommendation System</a></h1>
+            <p>Select ingredients and find matching recipes</p>
         </header>
 
         <main>
             <form action="{{ url_for('recipes_page') }}" method="get" class="ingredients-form" id="ingredientsForm">
                 <!-- Suchfeld mit Vorschlägen im gleichen Stil -->
                 <section class="search-section">
-                    <label for="ingredientSearch" class="visually-hidden">Zutat suchen</label>
+                    <label for="ingredientSearch" class="visually-hidden">Search ingredient</label>
                     <input 
                         type="search" 
                         id="ingredientSearch" 
                         class="search-input" 
-                        placeholder="Zutat suchen (z.B. 'Chicken')"
+                        placeholder="Search ingredient (e.g. 'Chicken')"
                         autocomplete="off"
                         aria-describedby="searchHint"
                     >
-                    <div id="searchSuggestions" class="search-suggestions" aria-label="Suchvorschläge"></div>
+                    <div id="searchSuggestions" class="search-suggestions" aria-label="Search suggestions"></div>
                 </section>
 
                 <!-- Gewählte Zutaten als Tags -->
                 <section class="selected-section">
                     <div class="selected-header">
-                        <h2>Gewählte Zutaten:</h2>
-                        <button type="button" class="btn-clear-all" id="clearAllBtn" aria-label="Alle Zutaten löschen" title="Alle Zutaten löschen">
+                        <h2>Selected ingredients:</h2>
+                        <button type="button" class="btn-clear-all" id="clearAllBtn" aria-label="Clear all ingredients" title="Clear all ingredients">
                             🗑️
                         </button>
                     </div>
                     <div id="selectedTags" class="tags-container">
-                        <p class="empty-state">Noch keine Zutaten gewählt</p>
+                        <p class="empty-state">No ingredients selected yet</p>
                     </div>
                 </section>
 
                 <!-- Zutatenkacheln -->
                 <section class="ingredients-section">
-                    <h2>Alle Zutaten:</h2>
+                    <h2>All ingredients:</h2>
                     <div class="ingredient-grid">
                         {% for ingredient in ingredients %}
                             {% set name = ingredient.strIngredient %}
@@ -63,7 +63,7 @@
                 <!-- Such-Button -->
                 <section class="action-section">
                     <button type="submit" class="btn btn-primary" id="searchBtn" disabled>
-                        Rezepte suchen
+                        Search recipes
                     </button>
                 </section>
             </form>

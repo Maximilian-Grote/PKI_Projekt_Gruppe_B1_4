@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ recipe.strMeal }} - Rezeptdetails</title>
+    <title>{{ recipe.strMeal }} - Recipe details</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Rezept-Empfehlungssystem</a></h1>
+            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Recipe Recommendation System</a></h1>
             <div class="header-buttons">
-                <a href="{{ url_for('index', ingredients=selected_ingredients) if selected_ingredients else url_for('index') }}" class="btn btn-secondary">Zur Zutatenauswahl</a>
-                <a href="{{ request.referrer or url_for('recipes_page') }}" class="btn btn-secondary">Zur Rezeptauswahl</a>
+                <a href="{{ url_for('index', ingredients=selected_ingredients) if selected_ingredients else url_for('index') }}" class="btn btn-secondary">Back to ingredient selection</a>
+                <a href="{{ request.referrer or url_for('recipes_page') }}" class="btn btn-secondary">Back to recipe list</a>
             </div>
         </header>
 
@@ -21,7 +21,7 @@
                 <h2 class="recipe-title">{{ recipe.strMeal }}</h2>
                 <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-detail-image" onerror="this.src='{{ url_for('static', filename='placeholder.svg') }}'">
 
-                <h3>Zutaten</h3>
+                <h3>Ingredients</h3>
                 <ul>
                     {% for i in range(1, 21) %}
                         {% set ingredient = recipe['strIngredient' + i|string] %}
@@ -32,18 +32,18 @@
                     {% endfor %}
                 </ul>
 
-                <h3>Anleitung</h3>
+                <h3>Instructions</h3>
                 <p>{{ recipe.strInstructions }}</p>
 
                 {% if recipe.strSource and recipe.strSource.strip() %}
-                    <p><a href="{{ recipe.strSource }}" target="_blank" rel="noreferrer">Quelle</a></p>
+                    <p><a href="{{ recipe.strSource }}" target="_blank" rel="noreferrer">Source</a></p>
                 {% endif %}
             </section>
 
             {% if recommended_recipes %}
             <section class="recipes-section">
-                <h2>Ähnliche Rezepte</h2>
-                <p class="hint">Basierend auf ähnlichen Zutaten</p>
+                <h2>Similar recipes</h2>
+                <p class="hint">Based on similar ingredients</p>
                 <div class="recipe-grid">
                     {% for rec in recommended_recipes %}
                         <a class="recipe-card" href="{{ url_for('recipe_detail_page', meal_id=rec.idMeal, ingredients=selected_ingredients) }}">

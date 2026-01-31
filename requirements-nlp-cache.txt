@@ -1,0 +1,12 @@
+# requirements für die Generierung des Zutaten-Ähnlichkeits-Cache (NLP)
+spacy==3.7.2
+spacy-transformers==1.3.5
+sentence-transformers==2.7.0
+transformers==4.36.2
+Levenshtein==0.25.1
+numpy==1.26.4
+hf_xet==1.1.4
+
+# spaCy-Modelle (als direkte Wheels)
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl
+https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl

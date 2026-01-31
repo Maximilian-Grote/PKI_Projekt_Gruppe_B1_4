@@ -1,69 +1,177 @@
-# Rezept-Empfehlungssystem - MVP
+## Inhaltsverzeichnis
+
+- [Rezept-Empfehlungssystem](#rezept-empfehlungssystem)
+  - [1. Features](#1-features)
+  - [2. Ablauf (Kurzfassung)](#2-ablauf-kurzfassung)
+  - [3. Ablaufdiagramm (Mermaid)](#3-ablaufdiagramm-mermaid)
+  - [4. NLP/Ähnlichkeitslogik (Vorverarbeitung)](#4-nlpähnlichkeitslogik-vorverarbeitung)
+  - [5. Rezeptempfehlungslogik](#5-rezeptempfehlungslogik)
+  - [6. Setup (kurz)](#6-setup-kurz)
+    - [6.1. Zusätzliche Requirements für Cache-Generierung](#61-zusätzliche-requirements-für-cache-generierung)
+  - [7. Ausführen (Bash)](#7-ausführen-bash)
+  - [8. Projektstruktur](#8-projektstruktur)
+  - [9. API-Endpoints (Backend)](#9-api-endpoints-backend)
+  - [10. TheMealDB-API-Integration](#10-themealdb-api-integration)
+  - [11. Beiträge](#11-beiträge)
+  - [12. KI-Einsatz](#12-ki-einsatz)
+
+
+# Rezept-Empfehlungssystem
 
 Ein webbasiertes Rezeptempfehlungssystem mit Zutatenwahl über eine benutzerfreundliche Oberfläche.
 
-## Features
+
+## 1. Features
 
 ✅ **Zutatenwahl-Interface**
 - Alle Zutaten von TheMealDB laden
 - Kachel-Layout mit Zutatenbildern
-- Suchfeld mit Auto-Komplettierung
+- Suchfeld mit Auto-Completion
 - Gewählte Zutaten als Tags anzeigen
 
 ✅ **Rezept-Suche**
 - Rezepte nach gewählten Zutaten suchen
 - Rezeptkarten mit Bildern anzeigen
-- Detailansicht mit Zutaten + Anleitung (Modal)
+- Detailansicht mit Zutaten + Anleitung
 
 ✅ **TheMealDB-Integration**
 - Kostenlose API ohne Authentifizierung
 - Caching zur Rate-Limit-Vermeidung
 - RESTful API-Wrapper
 
-## Setup
+✅ **Ähnliche Rezepte empfehlen**
+- Auf der Rezeptdetailseite werden ähnliche Rezepte vorgeschlagen
+- Basierend auf Zutatenprofilen und TF-IDF-Ähnlichkeit
+- Verbesserte Entdeckung neuer Rezepte
 
-### 1. Installation
+## 2. Ablauf (Kurzfassung)
+
+1. **Start**: App lädt Zutatenliste aus TheMealDB.
+2. **Zutatenwahl**: Nutzer wählt Zutaten über UI oder Suche.
+3. **Dedup**: Ähnliche Zutaten werden zusammengeführt.
+4. **Rezeptsuche**: Rezepte werden per Schnittmenge ermittelt.
+5. **Detailansicht**: Zutaten + Anleitung; ähnliche Rezepte werden empfohlen.
+
+## 3. Ablaufdiagramm (Mermaid)
+
+```mermaid
+flowchart TD
+  A[Startseite öffnen] --> B[Zutatenliste laden]
+  B --> C[Zutaten wählen]
+  C --> D[Ähnliche Zutaten deduplizieren]
+  D --> E[Rezepte per Schnittmenge suchen]
+  E --> F[Rezepte anzeigen]
+  F --> G[Rezept-Detail öffnen]
+  G --> H[Ähnliche Rezepte berechnen]
+```
+## 4. NLP/Ähnlichkeitslogik (Vorverarbeitung) 
+*Maximilian Grote*
+
+**Wichtig**: Die Zutaten-Ähnlichkeitslogik ist **keine Produktivlogik** im Flask-Server. Stattdessen wird sie als Vorverarbeitungsschritt ausgeführt:
+
+**Probleme:**
+- Unterschiedliche Schreibweisen (z. B. "Basil", "Basil Leaves")
+- Synonyme/Varianten verhindern Treffer in der Schnittmenge
+- API liefert teils ähnliche Zutaten als separate Einträge
+
+**Lösungen im Projekt:**
+1. **Im Notebook** ([rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb](rezept-empfehlungssystem/createIndexForSimilarIngredients.ipynb)): Die Ähnlichkeitsmatrix wird separat berechnet
+2. **NLP-Verfahren**:
+   - Semantische Ähnlichkeit (SentenceTransformer-Embeddings)
+   - String-Ähnlichkeit (Levenshtein-Distanz)
+   - Grammatikalische Analyse (spaCy Head-Noun-Extraction)
+   - Normalisierung von Strings (Kleinschreibung + Akzente entfernen)
+3. **Resultat**: JSON-Cache `ingredient_similarity_cache_*.json` mit Zuordnungen ähnlicher Zutaten
+4. **Anwendung**: Die JSON-Datei wird vom Server geladen und zur Deduplication während der Rezeptsuche verwendet
+
+Dieses Vorgehen ermöglicht schnelle Lookups ohne rechenintensive NLP-Operationen zur Laufzeit.
+
+## 5. Rezeptempfehlungslogik
+*Julien Maximilian Wache*    
+
+**Ablauf:**
+- Ausgangspunkt ist das aktuell geöffnete Rezept.
+- Aus der Zutatenliste wird ein TF‑IDF‑Vektor gebildet.
+- Alle anderen Rezepte werden ebenfalls als TF‑IDF‑Vektoren dargestellt.
+- Vergleich per Ähnlichkeitsmaß (Kosinus‑Ähnlichkeit) mit dem Ausgangsrezept.
+- Die Top‑Treffer mit der höchsten Ähnlichkeit werden als „ähnliche Rezepte“ angezeigt.
+
+**Ergebnis:**
+- Empfehlungen mit möglichst vielen gemeinsamen Zutaten bzw. ähnlichen Zutatenkombinationen, ohne zu strikte Filterung.
+
+## 6. Setup (kurz)
+
 ```bash
-cd rezept-empfehlungssystem
+python3.9 -m venv .venvRezept
+source .venvRezept/Scripts/activate
 pip install -r requirements.txt
 ```
 
-### 2. Starten
+**Hinweis zu Abhängigkeiten:**
+
+- Für den normalen Produktivbetrieb (Web-App, Rezepte suchen, Zutatenwahl etc.) reicht die Installation von `requirements.txt`.
+- **Für die Erstellung oder Aktualisierung des Zutaten-Ähnlichkeits-Cache (JSON) via Notebook `createIndexForSimilarIngredients.ipynb` gibt es eine separate requirements-Datei:**
+  - `requirements-nlp-cache.txt` (enthält alle nötigen NLP-Bibliotheken)
+
+Diese Pakete sind **nicht** in der Standard-`requirements.txt` enthalten, da sie nur für die einmalige Generierung des Caches gebraucht werden.
+
+### 6.1. Zusätzliche Requirements für Cache-Generierung
+
+Falls der Zutaten-Ähnlichkeits-Cache (`ingredient_similarity_cache_*.json`) neu erstellt werden soll:
+
 ```bash
-python app.py
+# (Im aktivierten venv)
+pip install -r requirements-nlp-cache.txt
 ```
 
+Danach kann das Notebook `createIndexForSimilarIngredients.ipynb` ausgeführt werden, um die JSON-Datei zu erzeugen.
+
+Hinweis: Die spaCy-Modelle (`en_core_web_md`, `en_core_web_trf`) sind in `requirements-nlp-cache.txt` als direkte Wheels enthalten. Falls die Installation der Modelle fehlschlägt, kann man sie manuell nachinstallieren:
+
+```bash
+python -m spacy download en_core_web_md
+python -m spacy download en_core_web_trf
+```
+
+Wenn nach der Installation die Meldung erscheint „You can now load the package via spacy.load('en_core_web_md')“, ist das **korrekt** – das Modell ist erfolgreich installiert und kann direkt in `spacy.load(...)` verwendet werden.
+
+**Im Produktivbetrieb werden diese Pakete nicht benötigt!**
+
+## 7. Ausführen (Bash)
+
+```bash
+cd rezept-empfehlungssystem
+python app.py
+```
 Die Anwendung läuft unter: `http://localhost:5000`
 
-## Projektstruktur
+
+## 8. Projektstruktur
 
 ```
 rezept-empfehlungssystem/
-├── app.py                    # Flask-Anwendung (Haupteinstiegspunkt)
-├── themealdb_client.py       # TheMealDB-API-Wrapper
-├── requirements.txt          # Python-Dependencies
+├── app.py                              # Flask-Anwendung
+├── themealdb_client.py                 # TheMealDB-API-Wrapper
+├── createIndexForSimilarIngredients.ipynb
+├── ingredient_similarity_cache_*.json  # Ähnlichkeits-Cache
 ├── templates/
-│   ├── index.html           # Zutatenwahl-Seite
-│   └── recipes.html         # Rezept-Ergebnisseite
+│   ├── index.html
+│   ├── recipes.html
+│   └── recipe_detail.html
 └── static/
-    ├── app.js               # Zutatenwahl-Logik
-    ├── recipes.js           # Rezept-Logik
-    └── style.css            # Styling
+    ├── ingredients-search.js
+    └── style.css
 ```
 
-## API-Endpoints
-
-### Backend-API
+## 9. API-Endpoints (Backend)
 
 | Endpoint | Methode | Beschreibung |
 |----------|---------|-------------|
 | `/` | GET | Startseite (Zutatenwahl) |
-| `/api/ingredients` | GET | Alle verfügbaren Zutaten |
-| `/api/recipes` | GET | Rezepte für Zutaten (Query: `?ingredients=Chicken,Garlic`) |
-| `/api/recipe/<meal_id>` | GET | Details eines Rezepts |
 | `/recipes` | GET | Rezepte-Ergebnisseite |
+| `/recipe/<meal_id>` | GET | Detailseite für ein Rezept |
 
-## TheMealDB-API-Integration
+## 10. TheMealDB-API-Integration
 
 - **Quelle**: https://www.themealdb.com/api.php
 - **Endpoints genutzt**:
@@ -72,38 +180,22 @@ rezept-empfehlungssystem/
   - `GET /lookup.php?i={meal_id}` – Rezept-Details
 - **Zutatenbilder**: `https://www.themealdb.com/images/ingredients/{name}.png`
 
-## Workflow
+## 11. Beiträge
 
-1. **Benutzer startet Anwendung**
-   - Frontend lädt alle Zutaten von `/api/ingredients`
-   - Zutaten als Kacheln mit Bildern rendern
+**Grundgerüst:**
+- Gemeinsam mit KI-Unterstützung erstellt
 
-2. **Benutzer wählt Zutaten**
-   - Klick auf Zutat togglet Auswahl
-   - Ausgewählte Zutaten als Tags oben anzeigen
-   - Such-Button aktiviert sich
+**Maximilian Grote:**
+- Zutaten-Normalisierung mit NLP
+- Erweiterung `TheMealDBClient` (z. B. `search_recipes_by_ingredient`)
+- Ähnlicshkeit-Cache-Integration
 
-3. **Benutzer klickt "Rezepte suchen"**
-   - Navigation zu `/recipes?ingredients=Chicken,Garlic`
-   - Frontend fetcht `/api/recipes?ingredients=Chicken,Garlic`
+**Julien Maximilian Wache:**
+- Rezept-Detail-Funktion (`get_recipe_details`)
+  - Rezept-Anzeige (Frontend + Backend)(`score_ingredient`)
+- Empfehlungslogik basierend auf ausgewähltem Rezept (TF-IDF) (`recommend_similar_recipes`)
 
-4. **Rezepte anzeigen**
-   - Rezept-Karten mit Bildern rendern
-   - Klick auf Rezept → Modal mit Details
-   - Modal zeigt: Bild, Zutaten, Anleitungstext
 
-## Entwickler-Hinweise
+## 12. KI-Einsatz
 
-- **Einfach halten**: Kein NLP/KI in dieser Phase—exaktes Matching reicht
-- **Caching**: TheMealDB-Antworten werden gecacht, um Rate-Limits zu vermeiden
-- **Fehlerbehandlung**: Fehlerhafte Zutatenbilder zeigen Placeholder
-- **Responsive Design**: Mobile & Desktop-kompatibel
-
-## Nächste Schritte (Zukunft)
-
-- [ ] NLP-Zutatenerkennung (spaCy/NLTK)
-- [ ] Flexible Suche (1-2 fehlende Zutaten)
-- [ ] Kategorien/Küchen-Filter
-- [ ] Lokalisierung (Deutsch/Englisch)
-- [ ] Content-based Empfehlungen (Scikit-learn)
-- [ ] Maßeinheiten-Konvertierung
+Für Teile der Ideenfindung, Code-Überarbeitung und Dokumentation wurde KI-Unterstützung verwendet (z. B. Textentwürfe, Strukturvorschläge, Refactoring-Ideen, README-Erstellung).

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezepte - Rezept-Empfehlungssystem</title>
+    <title>Recipes - Recipe Recommendation System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Rezept-Empfehlungssystem</a></h1>
-            <a href="{{ url_for('index', ingredients=selected_ingredients) }}" class="btn btn-secondary">Zur Zutatenauswahl</a>
+            <h1><a href="{{ url_for('index') }}" class="header-link">🍳 Recipe Recommendation System</a></h1>
+            <a href="{{ url_for('index', ingredients=selected_ingredients) }}" class="btn btn-secondary">Back to ingredient selection</a>
         </header>
 
         <main>
             <!-- Info zu gewählten Zutaten -->
             <section class="info-section">
-                <h2>Ergebnisse für:</h2>
+                <h2>Results for:</h2>
                 <div class="tags-container">
                     {% for ingredient in selected_ingredients %}
                         <span class="tag">{{ ingredient }}</span>
@@ -41,7 +41,7 @@
                             </a>
                         {% endfor %}
                     {% else %}
-                        <p class="empty-state">Keine Rezepte gefunden. Versuche andere Zutaten.</p>
+                        <p class="empty-state">No recipes found. Try other ingredients.</p>
                     {% endif %}
                 </div>
             </section>

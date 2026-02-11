@@ -116,6 +116,9 @@ class TheMealDBClient:
                 logger.info(
                     f" -- Found {len(recipes)} {ingredient}-recipes for ingredient '{ing}' ({score})"
                 )
+            logger.info(
+                f" -- Found {len(recipes)} {ingredient}-recipes for ingredients '{similar_ingredients}'"
+            )
 
             return recipes
 
